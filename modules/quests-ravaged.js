@@ -1373,8 +1373,8 @@ ModManager.modules.push(function(){
                                                 ],
                                                 explanation:[
                                                     {
-                                                        IT:"Una volta {label.guardian@2} {label.guardian@0} e salvati tutti i prigionieri, qualsiasi Eroe pu&ograve; spendere 1 PM nella Zona del segnalini Obiettivo sul lato colorato per lasciare il Dungeon. Non appena tutti gli Eroi hanno lasciato il Dungeon, {label.questVictory@0}.",
-                                                        EN:"Once {label.guardian@0} is eliminated and all the prisoners are freed, any Hero can spend 1 MP in the Objective marker on the colored side Zone to leave the Dungeon. As soon as all Heroes have left the Dungeon, {label.questVictory@0}."
+                                                        IT:"Una volta {label.guardian@2} {label.guardian@0} e salvati tutti i {tokensCount.time} prigionieri, qualsiasi Eroe pu&ograve; spendere 1 PM nella Zona del segnalini Obiettivo sul lato colorato per lasciare il Dungeon. Non appena tutti gli Eroi hanno lasciato il Dungeon, {label.questVictory@0}.",
+                                                        EN:"Once {label.guardian@0} is eliminated and all {tokensCount.time} prisoners are freed, any Hero can spend 1 MP in the Objective marker on the colored side Zone to leave the Dungeon. As soon as all Heroes have left the Dungeon, {label.questVictory@0}."
                                                     }
                                                 ]
                                             }
