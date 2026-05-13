@@ -9,7 +9,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-normal" ],
             label:{
-                EN:"MD2 map generator default tile layouts (normal-size)"
+                EN:"MD2 map generator default tile layouts (normal-size)",
+                RU:"Стандартные раскладки плиток генератора карт MD2 (обычный размер)"
             },
             content:[
                 {
@@ -544,7 +545,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-large" ],
             label:{
-                EN:"MD2 map generator default tile layouts (large-size)"
+                EN:"MD2 map generator default tile layouts (large-size)",
+                RU:"Стандартные раскладки плиток генератора карт MD2 (большой размер)"
             },
             content:[
                 {
@@ -1412,7 +1414,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-small" ],
             label:{
-                EN:"MD2 map generator default tile layouts (small-size)"
+                EN:"MD2 map generator default tile layouts (small-size)",
+                RU:"Стандартные раскладки плиток генератора карт MD2 (малый размер)"
             },
             content:[
                 {
@@ -1966,7 +1969,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-small", "maps-size-normal" ],
             label:{
-                EN:"MD2 map generator smallest tile layouts (smalllest-size)"
+                EN:"MD2 map generator smallest tile layouts (smalllest-size)",
+                RU:"Минимальные раскладки плиток генератора карт MD2 (наименьший размер)"
             },
             content:[
                 {
@@ -2190,7 +2194,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-normal", "maps-size-large" ],
             label:{
-                EN:"MD2 map generator smallest tile layouts (largest-size)"
+                EN:"MD2 map generator smallest tile layouts (largest-size)",
+                RU:"Минимальные раскладки плиток генератора карт MD2 (наибольший размер)"
             },
             content:[
                 {
@@ -2319,7 +2324,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-size-small", "maps-size-normal", "maps-size-large" ],
             label:{
-                EN:"MD2 map generator default tile layouts (fixed sizes)"
+                EN:"MD2 map generator default tile layouts (fixed sizes)",
+                RU:"Стандартные раскладки плиток генератора карт MD2 (фиксированные размеры)"
             },
             content:[
                 {
@@ -2876,7 +2882,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-default-uniform" ],
             label:{
-                EN:"MD2 map generator uniform skin setting"
+                EN:"MD2 map generator uniform skin setting",
+                RU:"Настройка одинакового оформления генератора карт MD2"
             },
             content:[
                 {
@@ -2900,7 +2907,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-default-notuniform" ],
             label:{
-                EN:"MD2 map generator not uniform skin setting"
+                EN:"MD2 map generator not uniform skin setting",
+                RU:"Настройка неодинакового оформления генератора карт MD2"
             },
             content:[
                 {
@@ -2924,7 +2932,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-default-split" ],
             label:{
-                EN:"MD2 map generator split skin setting"
+                EN:"MD2 map generator split skin setting",
+                RU:"Настройка разделённого оформления генератора карт MD2"
             },
             content:[
                 {
@@ -2950,7 +2959,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "maps-default" ],
             label:{
-                EN:"MD2 map generator default configurations"
+                EN:"MD2 map generator default configurations",
+                RU:"Конфигурации генератора карт MD2 по умолчанию"
             },
             content:[
                 {
