@@ -65,7 +65,7 @@ Interface=(function() {
     function loadLanguage() {
         let
             loadedLanguage=localStorage[LOCALSTORAGE_LANGUAGE],
-            language="EN",
+            language="RU",
             userLang = navigator.language || navigator.userLanguage;
         
         if (INTERFACE.supportedLanguages[loadedLanguage])
