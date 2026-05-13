@@ -977,7 +977,7 @@ ModManager.modules.push(function(){
                             values:{
                                 yes:{
                                     needs:[  "md2-hellscape", "quests", "maps-default", "campaign-default" ],
-                                    notExclude:[ "generator-campaign", "campaign-full", "campaign-mini", "campaign-2shots", "campaign-upgradepack-cyclopsduo", "campaign-upgradepack-hellephant", "campaign-fourhorsemen", "campaign-darkbringer" ]
+                                    notExclude:[ "generator-campaign", "campaign-full", "campaign-mini", "campaign-2shots", "campaign-baseonly", "campaign-upgradepack-cyclopsduo", "campaign-upgradepack-hellephant", "campaign-fourhorsemen", "campaign-darkbringer" ]
                                 }
                             }
                         }

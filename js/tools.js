@@ -131,6 +131,11 @@ Tools=(function(){
                 id:"2shots-campaign-eternalempire",
                 excludes:[],
                 needs:[ "boss", "bridge-default-twoexits", "generator-campaign", "campaign-2shots", "campaign-default", "md2-heavenfall", "quests", "maps-default", "md2-hellscape", "zc-eternalempire" ]
+            },
+            {
+                id:"baseonly-campaign",
+                excludes:[],
+                needs:[ "boss", "bridge-default-twoexits", "generator-campaign", "campaign-baseonly", "campaign-default", "quests", "maps-default", "md2-hellscape" ]
             }
         ],
         QUEST_CONFIGS=[
