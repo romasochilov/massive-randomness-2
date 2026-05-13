@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-eternalempire" ],
             label:{
-                EN:"Zombicide: Eternal Empire tiles"
+                EN:"Zombicide: Eternal Empire tiles",
+                RU:"Плитки Zombicide: Eternal Empire"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcEternalEmpire:{
                             EN:"from Zombicide: Eternal Empire",
-                            IT:"da Zombicide: Eternal Empire"
+                            IT:"da Zombicide: Eternal Empire",
+                            RU:"из Zombicide: Eternal Empire"
                         }
                     }
                 },{

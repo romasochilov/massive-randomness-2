@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ "md2-hellscape" ],
             provides:[ "challenges-default" ],
             label:{
-                EN:"MD2 challenges default configurations"
+                EN:"MD2 challenges default configurations",
+                RU:"Стандартные конфигурации испытаний MD2"
             },
             content:[
                 {
@@ -21,13 +22,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Armatura Abissale",
-                                            EN:"Abyssal Armor"
+                                            EN:"Abyssal Armor",
+                                            RU:"Абиссальная броня"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Difesa:</span> +{symbol.blueDie}",
-                                            EN:"Enemies have <span class='phase'>Defense:</span> +{symbol.blueDie}"
+                                            EN:"Enemies have <span class='phase'>Defense:</span> +{symbol.blueDie}",
+                                            RU:"Враги имеют <span class='phase'>Защита:</span> +{symbol.blueDie}"
                                         }
                                     ]
                                 }
@@ -40,13 +43,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Forza Abissale",
-                                            EN:"Abyssal Strength"
+                                            EN:"Abyssal Strength",
+                                            RU:"Абиссальная сила"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Gregari ed i Comandanti hanno +1 Salute.",
-                                            EN:"Minions and Leaders do have +1 Health."
+                                            EN:"Minions and Leaders do have +1 Health.",
+                                            RU:"Прислужники и лидеры имеют +1 здоровья."
                                         }
                                     ]
                                 }
@@ -59,13 +64,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Patto del Sangue",
-                                            EN:"Blood Path"
+                                            EN:"Blood Path",
+                                            RU:"Кровавый путь"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span> {symbol.mana}: +{symbol.fang}",
-                                            EN:"Enemies have <span class='phase'>Combat</span> {symbol.mana}: +{symbol.fang}"
+                                            EN:"Enemies have <span class='phase'>Combat</span> {symbol.mana}: +{symbol.fang}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span> {symbol.mana}: +{symbol.fang}"
                                         }
                                     ]
                                 }
@@ -78,13 +85,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Daghe Demoniache",
-                                            EN:"Demon Daggers"
+                                            EN:"Demon Daggers",
+                                            RU:"Демонические кинжалы"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span>: +{symbol.yellowDie}",
-                                            EN:"Enemies have <span class='phase'>Attack</span>: +{symbol.yellowDie}"
+                                            EN:"Enemies have <span class='phase'>Attack</span>: +{symbol.yellowDie}",
+                                            RU:"Враги имеют <span class='phase'>Атака</span>: +{symbol.yellowDie}"
                                         }
                                     ]
                                 }
@@ -97,13 +106,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Artigli Glaciali",
-                                            EN:"Glacial Claws"
+                                            EN:"Glacial Claws",
+                                            RU:"Ледяные когти"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span> {symbol.mana}: +{symbol.frostToken} (una volta per round)",
-                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: +{symbol.frostToken} (once per round)"
+                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: +{symbol.frostToken} (once per round)",
+                                            RU:"Враги имеют <span class='phase'>Атака</span> {symbol.mana}: +{symbol.frostToken} (один раз за раунд)"
                                         }
                                     ]
                                 }
@@ -116,13 +127,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Odio",
-                                            EN:"Hatred"
+                                            EN:"Hatred",
+                                            RU:"Ненависть"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span> {symbol.mana}: Rilancia tutti i risultati vuoti su {symbol.blackDie}",
-                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: Reroll all blank results on {symbol.blackDie}"
+                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: Reroll all blank results on {symbol.blackDie}",
+                                            RU:"Враги имеют <span class='phase'>Атака</span> {symbol.mana}: перебросьте все пустые результаты на {symbol.blackDie}"
                                         }
                                     ]
                                 }
@@ -135,13 +148,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Furia Infernale",
-                                            EN:"Hell's Fury"
+                                            EN:"Hell's Fury",
+                                            RU:"Ярость ада"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Le armi nemiche contano come {symbol.rangeRanged} in aggiunta al loro tipo.",
-                                            EN:"Enemy weapons count as {symbol.rangeRanged} in addition to its type."
+                                            EN:"Enemy weapons count as {symbol.rangeRanged} in addition to its type.",
+                                            RU:"Оружие врагов считается {symbol.rangeRanged} в дополнение к своему типу."
                                         }
                                     ]
                                 }
@@ -154,13 +169,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"L'Ira dell'Inferno",
-                                            EN:"Hell's Wrath"
+                                            EN:"Hell's Wrath",
+                                            RU:"Гнев ада"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Le armi nemiche contano come {symbol.rangeMagic} in aggiunta al loro tipo.",
-                                            EN:"Enemy weapons count as {symbol.rangeMagic} in addition to its type."
+                                            EN:"Enemy weapons count as {symbol.rangeMagic} in addition to its type.",
+                                            RU:"Оружие врагов считается {symbol.rangeMagic} в дополнение к своему типу."
                                         }
                                     ]
                                 }
@@ -173,13 +190,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Lame Infernali",
-                                            EN:"Inferno Blades"
+                                            EN:"Inferno Blades",
+                                            RU:"Клинки преисподней"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span> {symbol.mana}: +{symbol.fireToken} (una volta per round)",
-                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: +{symbol.fireToken} (once per round)"
+                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: +{symbol.fireToken} (once per round)",
+                                            RU:"Враги имеют <span class='phase'>Атака</span> {symbol.mana}: +{symbol.fireToken} (один раз за раунд)"
                                         }
                                     ]
                                 }
@@ -192,13 +211,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Mistura Velenosa",
-                                            EN:"Poisonous Mixture"
+                                            EN:"Poisonous Mixture",
+                                            RU:"Ядовитая смесь"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span> {symbol.mana}: +1 {symbol.fang}",
-                                            EN:"Enemies have <span class='phase'>Combat</span> {symbol.mana}: +1 {symbol.fang}"
+                                            EN:"Enemies have <span class='phase'>Combat</span> {symbol.mana}: +1 {symbol.fang}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span> {symbol.mana}: +1 {symbol.fang}"
                                         }
                                     ]
                                 }
@@ -211,13 +232,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Nessun Perdono",
-                                            EN:"No Forgiveness"
+                                            EN:"No Forgiveness",
+                                            RU:"Без прощения"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Non utilizzare alcun segnalino Latore di Vita. Se un Eroe viene messo KO, la Missione termina con la sconfitta.",
-                                            EN:"Do not use any Lifebringer tokens. If one Hero is KO'd, the Mission ends in defeat."
+                                            EN:"Do not use any Lifebringer tokens. If one Hero is KO'd, the Mission ends in defeat.",
+                                            RU:"Не используйте жетоны Lifebringer. Если один герой оказывается в нокауте, задание завершается поражением."
                                         }
                                     ]
                                 }
@@ -230,13 +253,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Debolezza Debilitante",
-                                            EN:"Debilitating Weakness"
+                                            EN:"Debilitating Weakness",
+                                            RU:"Изнуряющая слабость"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Quando i gli Eroi attaccano i Nemici tirano 1 {symbol.yellowDie} in meno.",
-                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.yellowDie}."
+                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.yellowDie}.",
+                                            RU:"При атаке врагов герои бросают на 1 {symbol.yellowDie} меньше."
                                         }
                                     ]
                                 }
@@ -249,13 +274,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Lame Demoniache",
-                                            EN:"Demon Blades"
+                                            EN:"Demon Blades",
+                                            RU:"Демонические клинки"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span>: +1 {symbol.sword}",
-                                            EN:"Enemies have <span class='phase'>Attack</span>: +1 {symbol.sword}"
+                                            EN:"Enemies have <span class='phase'>Attack</span>: +1 {symbol.sword}",
+                                            RU:"Враги имеют <span class='phase'>Атака</span>: +1 {symbol.sword}"
                                         }
                                     ]
                                 }
@@ -268,13 +295,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Spade Demoniache",
-                                            EN:"Demon Swords"
+                                            EN:"Demon Swords",
+                                            RU:"Демонические мечи"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span>: +1 {symbol.blackDie}",
-                                            EN:"Enemies have <span class='phase'>Combat</span>: +1 {symbol.blackDie}"
+                                            EN:"Enemies have <span class='phase'>Combat</span>: +1 {symbol.blackDie}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span>: +1 {symbol.blackDie}"
                                         }
                                     ]
                                 }
@@ -287,13 +316,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Vento Infernale",
-                                            EN:"Hellish Wind"
+                                            EN:"Hellish Wind",
+                                            RU:"Адский ветер"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span> {symbol.mana}: Dopo questo attacco sposta l'eroe difensore di 1 Zona verso questo Nemico.",
-                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: After this attack, move the defending hero 1 Zone toward this Enemy."
+                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: After this attack, move the defending hero 1 Zone toward this Enemy.",
+                                            RU:"Враги имеют <span class='phase'>Атака</span> {symbol.mana}: после этой атаки переместите защищающегося героя на 1 зону к этому врагу."
                                         }
                                     ]
                                 }
@@ -306,13 +337,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Debolezza Pervasiva",
-                                            EN:"Pervasive Weakness"
+                                            EN:"Pervasive Weakness",
+                                            RU:"Всепроникающая слабость"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Quando attaccano i Nemici, gli Eroi tirano 1 {symbol.yellowDie} in meno.",
-                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.yellowDie}."
+                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.yellowDie}.",
+                                            RU:"При атаке врагов герои бросают на 1 {symbol.yellowDie} меньше."
                                         }
                                     ]
                                 }
@@ -325,13 +358,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Mistura Velenosa 2",
-                                            EN:"Poisonous Mixture 2"
+                                            EN:"Poisonous Mixture 2",
+                                            RU:"Ядовитая смесь 2"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span>: +1 {symbol.scratch}",
-                                            EN:"Enemies have <span class='phase'>Combat</span>: +1 {symbol.scratch}"
+                                            EN:"Enemies have <span class='phase'>Combat</span>: +1 {symbol.scratch}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span>: +1 {symbol.scratch}"
                                         }
                                     ]
                                 }
@@ -344,13 +379,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Velocit&agrave; Innaturale",
-                                            EN:"Unnatural Speed"
+                                            EN:"Unnatural Speed",
+                                            RU:"Неестественная скорость"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Quando si attivano, I Nemici hanno +1 Movimento.",
-                                            EN:"When activating, Enemies have +1 Move action."
+                                            EN:"When activating, Enemies have +1 Move action.",
+                                            RU:"При активации враги получают +1 действие перемещения."
                                         }
                                     ]
                                 }
@@ -363,13 +400,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Ben Equipaggiati",
-                                            EN:"Well Equipped"
+                                            EN:"Well Equipped",
+                                            RU:"Хорошо экипированы"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Le Orde sono generate sempre con un oggetto di livello superiore, se possibile.",
-                                            EN:"Mobs always Spawn with an item from a higher tier, if possible."
+                                            EN:"Mobs always Spawn with an item from a higher tier, if possible.",
+                                            RU:"Орды всегда появляются с предметом более высокого уровня, если это возможно."
                                         }
                                     ]
                                 }
@@ -382,13 +421,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Burrasca Abissale",
-                                            EN:"Abyssal Gale"
+                                            EN:"Abyssal Gale",
+                                            RU:"Абиссальный шквал"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span> {symbol.mana}: Dopo questo attacco, sposta l'Eroe difensore di 1 Zona verso la Zona di Partenza degli Eroi.",
-                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: After this attack, move the defending Hero 1 Zone toward the Hero starting space."
+                                            EN:"Enemies have <span class='phase'>Attack</span> {symbol.mana}: After this attack, move the defending Hero 1 Zone toward the Hero starting space.",
+                                            RU:"Враги имеют <span class='phase'>Атака</span> {symbol.mana}: после этой атаки переместите защищающегося героя на 1 зону к стартовой зоне героев."
                                         }
                                     ]
                                 }
@@ -401,13 +442,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Burrasca Abissale",
-                                            EN:"Abyssal Gale"
+                                            EN:"Abyssal Gale",
+                                            RU:"Абиссальный шквал"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span>: +{symbol.fang}",
-                                            EN:"Enemies have <span class='phase'>Combat</span>: +{symbol.fang}"
+                                            EN:"Enemies have <span class='phase'>Combat</span>: +{symbol.fang}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span>: +{symbol.fang}"
                                         }
                                     ]
                                 }
@@ -420,13 +463,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Debolezza Debilitante 2",
-                                            EN:"Debilitating Weakness 2"
+                                            EN:"Debilitating Weakness 2",
+                                            RU:"Изнуряющая слабость 2"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Quando i gli Eroi attaccano i Nemici tirano 1 {symbol.orangeDie} in meno.",
-                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.orangeDie}."
+                                            EN:"When attacking Enemies, Heroes roll 1 less {symbol.orangeDie}.",
+                                            RU:"При атаке врагов герои бросают на 1 {symbol.orangeDie} меньше."
                                         }
                                     ]
                                 }
@@ -439,13 +484,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Daghe Demoniache 2",
-                                            EN:"Demon Daggers 2"
+                                            EN:"Demon Daggers 2",
+                                            RU:"Демонические кинжалы 2"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span>: +{symbol.orangeDie}",
-                                            EN:"Enemies have <span class='phase'>Combat</span>: +{symbol.orangeDie}"
+                                            EN:"Enemies have <span class='phase'>Combat</span>: +{symbol.orangeDie}",
+                                            RU:"Враги имеют <span class='phase'>Бой</span>: +{symbol.orangeDie}"
                                         }
                                     ]
                                 }
@@ -458,13 +505,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Assorbimento Energetico",
-                                            EN:"Energy Drain"
+                                            EN:"Energy Drain",
+                                            RU:"Похищение энергии"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Difesa</span>: L'Eroe attaccante perde 1 {symbol.mana}",
-                                            EN:"Enemies have <span class='phase'>Defense</span>: Attacking Hero loses 1 {symbol.mana}"
+                                            EN:"Enemies have <span class='phase'>Defense</span>: Attacking Hero loses 1 {symbol.mana}",
+                                            RU:"Враги имеют <span class='phase'>Защита</span>: атакующий герой теряет 1 {symbol.mana}"
                                         }
                                     ]
                                 }
@@ -477,13 +526,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Armatura Infernale",
-                                            EN:"Hellish Armor"
+                                            EN:"Hellish Armor",
+                                            RU:"Адская броня"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Difesa</span>: +{symbol.shield}",
-                                            EN:"Enemies have <span class='phase'>Defense</span>: +{symbol.shield}"
+                                            EN:"Enemies have <span class='phase'>Defense</span>: +{symbol.shield}",
+                                            RU:"Враги имеют <span class='phase'>Защита</span>: +{symbol.shield}"
                                         }
                                     ]
                                 }
@@ -496,13 +547,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Evocazione delle Ombre",
-                                            EN:"Shadow Summons"
+                                            EN:"Shadow Summons",
+                                            RU:"Теневой призыв"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Attacco</span>: +{symbol.purpleDie} ({symbol.face}: Aggiungi 1 Gregario a questa Orda / Questo Mostro Errante si cura di 5)",
-                                            EN:"Enemies have <span class='phase'>Attack</span>: +{symbol.purpleDie} ({symbol.face}: Add 1 Minion to this Mob / This Roaming Monster Heals 5)"
+                                            EN:"Enemies have <span class='phase'>Attack</span>: +{symbol.purpleDie} ({symbol.face}: Add 1 Minion to this Mob / This Roaming Monster Heals 5)",
+                                            RU:"Враги имеют <span class='phase'>Атака</span>: +{symbol.purpleDie} ({symbol.face}: добавьте 1 прислужника в эту орду / Этот блуждающий монстр восстанавливает 5 здоровья)"
                                         }
                                     ]
                                 }
@@ -515,13 +568,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Scivolata",
-                                            EN:"Slink"
+                                            EN:"Slink",
+                                            RU:"Ускользание"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"I Nemici hanno <span class='phase'>Combattimento</span>: Dopo il combattimento muovi questo Nemico di 1 Zona pi&ugrave; lontano dall'Eroe attaccante o difensore, se possibile (una volta per tiro).",
-                                            EN:"Enemies have <span class='phase'>Combat</span>: After combat, move this Enemy 1 Zone away from the attacking or defending Hero, if possible (once per roll)."
+                                            EN:"Enemies have <span class='phase'>Combat</span>: After combat, move this Enemy 1 Zone away from the attacking or defending Hero, if possible (once per roll).",
+                                            RU:"Враги имеют <span class='phase'>Бой</span>: после боя переместите этого врага на 1 зону дальше от атакующего или защищающегося героя, если это возможно (один раз за бросок)."
                                         }
                                     ]
                                 }
@@ -534,13 +589,15 @@ ModManager.modules.push(function(){
                                     name:[
                                         {
                                             IT:"Crescita Bloccata",
-                                            EN:"Stopped Growth"
+                                            EN:"Stopped Growth",
+                                            RU:"Остановленный рост"
                                         }
                                     ],
                                     explanation:[
                                         {
                                             IT:"Quando sali di livello, non ottieni il beneficio +1 Salute massima o +1 Mana massimo. A meno che un'abilit&agrave; non indichi diversamente, la salute massima e il mana degli eroi sono i loro valori iniziali.",
-                                            EN:"When leveling up, do not gain the +1 Max Health or +1 Max Mana benefit. Unless a skill states otherwise, Heroes' Max Health and Mana are their starting values."
+                                            EN:"When leveling up, do not gain the +1 Max Health or +1 Max Mana benefit. Unless a skill states otherwise, Heroes' Max Health and Mana are their starting values.",
+                                            RU:"При повышении уровня не получайте бонус +1 к максимуму здоровья или +1 к максимуму маны. Если способность не указывает иное, максимальное здоровье и мана героев остаются на своих стартовых значениях."
                                         }
                                     ]
                                 }
