@@ -366,6 +366,18 @@ ModManager.modules.push(function(){
                                             RU:"Сгенерировать очень короткую кампанию из 2 миссий, в которые нужно играть по порядку, следуя <a target=_blank href='https://boardgamegeek.com/thread/3460934/2-shot-campaign'>домашним правилам</a> пользователя BGG <a target=_blank href='https://boardgamegeek.com/user/Rough_neck'>Roughneck CC</a>."
                                         },
                                         tags:[ "generator-campaign", "campaign-2shots",  "boss" ]
+                                    },{
+                                        idOption:"generator-campaign-baseonly",
+                                        code:"b",
+                                        label:{
+                                            EN:"Base box only mini-campaign",
+                                            RU:"Мини-кампания только из базовой коробки"
+                                        },
+                                        description:{
+                                            EN:"Generates a 2-act mini-campaign that uses only content from the MD2 Hellscape base box — no expansions required.",
+                                            RU:"Сгенерировать мини-кампанию из 2 актов, в которой используется только содержимое базовой коробки MD2 Hellscape — расширения не требуются."
+                                        },
+                                        tags:[ "generator-campaign", "campaign-baseonly", "boss" ]
                                     }
                                 ]
                             },{
@@ -484,7 +496,7 @@ ModManager.modules.push(function(){
                                 entries:[
                                     {
                                         code:"O",
-                                        ifMenuOptionSelected:[ "generator-campaign", "generator-campaign-mini", "generator-campaign-2shots" ],
+                                        ifMenuOptionSelected:[ "generator-campaign", "generator-campaign-mini", "generator-campaign-2shots", "generator-campaign-baseonly" ],
                                         label:{
                                             IT:"Nascondi gli spoiler",
                                             EN:"Hide spoilers",
