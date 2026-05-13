@@ -52,15 +52,15 @@ ModManager.modules.push(function(){
                                                     {
                                                         IT:[ "il Guardiano", "la Stretta del Guardiano", "la stretta del Guardiano lo eliminer&agrave;", "Stretta Mortale", "&egrave; diventato", "attaccato o influenzato", "lo", "rimasto sopito", "lo ha reso", "lo acceca", "colpito normalmente", "di liberarlo" ],
                                                         EN:[ "the Guardian", "the Guardian's Grip", "the Guardian's grip will eliminate it", "Deathgrip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free him" ],
-                                                        RU:["Хранитель", "Хватка Стража", "Хватка Стража устранит это", "Смертельная хватка", "стал", "подвергся нападению или пострадал", "it", "остался в спячке", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
+                                                        RU:["Хранитель", "Хватка Стража", "Хватка Стража устранит его", "Смертельная хватка", "стал", "атакован или подвергнут воздействию", "Хранителя", "остался в спячке", "сделал его", "ослепляет его", "обычной атакой", "освободить его"]
                                                     },{
                                                         IT:[ "la Fiera", "la Morsa della Fiera", "la morsa della Fiera lo eliminer&agrave;", "Morsa Fatale", "&egrave; diventata", "attaccata o influenzata", "la", "rimasta sopita", "lo ha resa", "la acceca", "colpita normalmente", "di liberarla" ],
                                                         EN:[ "the Creature", "the Creature's Grip", "the Creature's grip will eliminate it", "Fatal Grip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free it" ],
-                                                        RU:["Существо", "Хватка существа", "Хватка Существа устранит это", "Роковая хватка", "стал", "подвергся нападению или пострадал", "it", "остался в спячке", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
+                                                        RU:["Существо", "Хватка Существа", "Хватка Существа устранит его", "Роковая хватка", "стало", "атаковано или подвергнуто воздействию", "Существо", "оставалось в спячке", "сделало его", "ослепляет его", "обычной атакой", "освободить его"]
                                                     },{
                                                         IT:[ "la Bestia", "la Stretta della Bestia", "la stretta della Bestia lo eliminer&agrave;", "Stretta Bestiale", "&egrave; diventata", "attaccata o influenzata", "la", "rimasta sopita", "lo ha resa", "la acceca", "colpita normalmente", "di liberarla" ],
                                                         EN:[ "the Beast", "the Beast's Grip", "the Beast's grip will eliminate it", "Beast's Grip", "has become", "attacked or affected", "it", "left dormant", "has made it", "blinds it", "hit normally", "to free it" ],
-                                                        RU:["Зверь", "Хватка Зверя", "Хватка Зверя устранит это", "Звериная хватка", "стал", "подвергся нападению или пострадал", "it", "оставил бездействующим", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
+                                                        RU:["Зверь", "Хватка Зверя", "Хватка Зверя устранит его", "Звериная хватка", "стал", "атакован или подвергнут воздействию", "Зверя", "оставался в спячке", "сделал его", "ослепляет его", "обычной атакой", "освободить его"]
                                                     }
                                                 ],
                                                 type:[
@@ -97,15 +97,15 @@ ModManager.modules.push(function(){
                                                     {
                                                         IT:[ "{label.guardian@4} terribilmente potente" ],
                                                         EN:[ "it {label.guardian@4} scaringly powerful" ],
-                                                        RU:["это {label.guardian@4} пугающе мощно"]
+                                                        RU:["теперь обладает пугающей силой"]
                                                     },{
                                                         IT:[ "una rabbia incontenibile {label.guardian@8} inarrestabile" ],
                                                         EN:[ "an uncontrollable rage {label.guardian@8} unstoppable" ],
-                                                        RU:["неконтролируемая ярость {label.guardian@8}, которую невозможно остановить"]
+                                                        RU:["неконтролируемая ярость захлестнула его, и теперь его невозможно остановить"]
                                                     },{
                                                         IT:[ "un implacabile desiderio di distruzione {label.guardian@9}" ],
                                                         EN:[ "a relentless desire for destruction {label.guardian@9}" ],
-                                                        RU:["неустанное стремление к разрушению {label.guardian@9}"]
+                                                        RU:["неустанное стремление к разрушению ослепляет его"]
                                                     }
                                                 ],
                                                 spell:[
@@ -127,7 +127,7 @@ ModManager.modules.push(function(){
                                                     {
                                                         IT:[ "sperando {label.guardian@11} dalla morsa dell'Oscurit&agrave;!" ],
                                                         EN:[ "hoping {label.guardian@11} from the grip of the Darkness!" ],
-                                                        RU:["надеясь, что {label.guardian@11} вырвется из тисков Тьмы!"]
+                                                        RU:["надеясь освободить его из тисков Тьмы!"]
                                                     },{
                                                         IT:[ "cercando di non rimetterci la pelle!" ],
                                                         EN:[ "trying not to lose our skin!" ],
@@ -135,7 +135,7 @@ ModManager.modules.push(function(){
                                                     },{
                                                         IT:[ "o altrimenti..." ],
                                                         EN:[ "or else..." ],
-                                                        RU:["или еще..."]
+                                                        RU:["иначе..."]
                                                     }
                                                 ],
                                                 bossBeat:BOSSBEAT,
@@ -230,14 +230,14 @@ ModManager.modules.push(function(){
                                                     {
                                                         IT:"Generare un Mostro Errante di livello 5 nella Zona contrassegnata dal segnalino Corruzione {symbol.corruptionToken} e rimuovi quel segnalino. Questo &egrave; {label.guardian@0}.",
                                                         EN:"Generate a Level 5 Roaming Monster in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}.",
-                                                        RU:"Создайте бродячего монстра 5-го уровня в зоне токена коррупции {symbol.corruptionToken} и удалите этот жетон. Это {label.guardian@0}."
+                                                        RU:"Создайте блуждающего монстра 5-го уровня в Зоне с жетоном порчи {symbol.corruptionToken} и удалите этот жетон. Это {label.guardian@0}."
                                                     }
                                                 ],
                                                 campaignExplanation:[
                                                     {
                                                         IT: "Generare {label.campaignBoss@0} nella Zona contrassegnata dal segnalino Corruzione {symbol.corruptionToken} e rimuovi quel segnalino. Questo &egrave; {label.guardian@0}.",
                                                         EN: "Spawn {label.campaignBoss@0} in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}.",
-                                                        RU:"Создайте {label.campaignBoss@0} в зоне {symbol.corruptionToken} токена коррупции и удалите этот токен. Это {label.guardian@0}."
+                                                        RU:"Создайте {label.campaignBoss@0} в Зоне с жетоном порчи {symbol.corruptionToken} и удалите этот жетон. Это {label.guardian@0}."
                                                     }
                                                 ]
                                             }

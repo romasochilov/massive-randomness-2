@@ -32,12 +32,12 @@ ModManager.modules.push(function(){
         BOSSMODIFIER={
             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
         },
         BOSSPHASE2MODIFIER={
             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossPhase2Health} PV per Eroe." ],
             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossPhase2Health} HP per Hero." ],
-            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossPhase2Health} здоровья на героя." ]
+            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossPhase2Health} здоровья на героя." ]
         }
         BOSSAT=[
             [ { act:1, map:1 } ],
@@ -995,7 +995,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1005,7 +1005,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1015,7 +1015,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1025,7 +1025,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         }
                                     }
                                 }
@@ -1097,7 +1097,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1107,7 +1107,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1117,7 +1117,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1127,7 +1127,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 }
@@ -1199,13 +1199,13 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         },
                                         bossPhase2Health:{ EN:25 },
                                         bossPhase2Modifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossPhase2Health} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossPhase2Health} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossPhase2Health} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossPhase2Health} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 },
@@ -1215,13 +1215,13 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossBaaalberithPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossBaaalberithPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossBaaalberithPlainMods@0}." ]
                                         },
                                         bossPhase2Health:{ EN:30 },
                                         bossPhase2Modifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossPhase2Health} PV per Eroe, {boss.bossBaaalberithEnragedPlainMods@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossPhase2Health} HP per Hero, {boss.bossBaaalberithEnragedPlainMods@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossPhase2Health} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossPhase2Health} здоровья на героя, {boss.bossBaaalberithEnragedPlainMods@0}." ]
                                         }
                                     }
                                 }
@@ -1323,7 +1323,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCyclopsDuoHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCyclopsDuoHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1335,7 +1335,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCyclopsDuoHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCyclopsDuoHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1347,7 +1347,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCyclopsDuoHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCyclopsDuoHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1359,7 +1359,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCyclopsDuoHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCyclopsDuoHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1371,7 +1371,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCyclopsDuoHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCyclopsDuoHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCyclopsDuoHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1476,7 +1476,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1488,7 +1488,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1500,7 +1500,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1512,7 +1512,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1524,7 +1524,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1620,7 +1620,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1633,7 +1633,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1646,7 +1646,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1659,7 +1659,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1672,7 +1672,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHellephantHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHellephantHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHellephantHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -1760,7 +1760,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         }
                                     }
                                 },
@@ -1770,7 +1770,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         }
                                     }
                                 },
@@ -1780,7 +1780,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         }
                                     }
                                 },
@@ -1790,7 +1790,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         }
                                     }
                                 }
@@ -1803,7 +1803,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1816,7 +1816,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1830,7 +1830,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1843,7 +1843,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1856,7 +1856,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1869,7 +1869,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonCampaignMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonCampaignMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonCampaignMod@0}." ]
                                             }
                                         }
                                     }
@@ -1950,7 +1950,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         },
                                         bossPhase2Health:{ EN:20 },
                                         bossPhase2Modifier:BOSSPHASE2MODIFIER
@@ -1962,7 +1962,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                         },
                                         bossPhase2Health:{ EN:30 },
                                         bossPhase2Modifier:BOSSPHASE2MODIFIER
@@ -1977,7 +1977,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             }
                                         }
                                     }
@@ -1990,7 +1990,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             }
                                         }
                                     }
@@ -2004,7 +2004,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             },
                                             bossPhase2Modifier:BOSSPHASE2MODIFIER
                                         }
@@ -2018,7 +2018,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             },
                                             bossPhase2Modifier:BOSSPHASE2MODIFIER
                                         }
@@ -2032,7 +2032,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             },
                                             bossPhase2Modifier:BOSSPHASE2MODIFIER
                                         }
@@ -2046,7 +2046,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             },
                                             bossPhase2Modifier:BOSSPHASE2MODIFIER
                                         }
@@ -2060,7 +2060,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossAbyssalDemonOneShotMod@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossAbyssalDemonOneShotMod@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossAbyssalDemonOneShotMod@0}." ]
                                             },
                                             bossPhase2Modifier:BOSSPHASE2MODIFIER
                                         }
@@ -2149,7 +2149,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                         }
                                     }
                                 },
@@ -2159,7 +2159,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                         }
                                     }
                                 },
@@ -2169,7 +2169,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                         }
                                     }
                                 },
@@ -2179,7 +2179,7 @@ ModManager.modules.push(function(){
                                         bossModifier:{
                                             IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                             EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                            RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                            RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                         }
                                     }
                                 }
@@ -2192,7 +2192,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                             }
                                         }
                                     }
@@ -2205,7 +2205,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                             }
                                         }
                                     }
@@ -2219,7 +2219,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                             }
                                         }
                                     }
@@ -2232,7 +2232,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                             }
                                         }
                                     }
@@ -2245,7 +2245,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя." ]
                                             }
                                         }
                                     }
@@ -2381,7 +2381,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossScorpionKingHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossScorpionKingHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2393,7 +2393,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossScorpionKingHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossScorpionKingHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2405,7 +2405,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossScorpionKingHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossScorpionKingHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2417,7 +2417,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossScorpionKingHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossScorpionKingHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2429,7 +2429,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossScorpionKingHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossScorpionKingHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossScorpionKingHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2506,7 +2506,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHadesHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHadesHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2518,7 +2518,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHadesHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHadesHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2530,7 +2530,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHadesHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHadesHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2542,7 +2542,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHadesHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHadesHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2554,7 +2554,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossHadesHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossHadesHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossHadesHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2631,7 +2631,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCharonHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCharonHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2643,7 +2643,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCharonHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCharonHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2655,7 +2655,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCharonHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCharonHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2667,7 +2667,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCharonHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCharonHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
                                             }
                                         }
                                     }
@@ -2679,7 +2679,7 @@ ModManager.modules.push(function(){
                                             bossModifier:{
                                                 IT:[ " In questo scontro {boss.bossUnit@0} ha {boss.bossHealth} PV per Eroe, {boss.bossCharonHardMods@0}." ],
                                                 EN:[ " In this fight, {boss.bossUnit@0} has {boss.bossHealth} HP per Hero, {boss.bossCharonHardMods@0}." ],
-                                                RU:[ " В этой битве у {boss.bossUnit@0} {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
+                                                RU:[ " В этой битве {boss.bossUnit@0} имеет {boss.bossHealth} здоровья на героя, {boss.bossCharonHardMods@0}." ]
                                             }
                                         }
                                     }
