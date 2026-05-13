@@ -481,7 +481,8 @@ ModManager.modules.push(function(){
                                         languageExcludeTags:{
                                             IT:[ "untranslated-it" ],
                                             EN:[ "untranslated-en" ],
-                                            FR:[ "untranslated-fr" ]
+                                            FR:[ "untranslated-fr" ],
+                                            RU:[ "untranslated-ru" ]
                                         }
                                     },{
                                         ifFlag:"zombicide",
@@ -544,7 +545,8 @@ ModManager.modules.push(function(){
                         supportedLanguages:{
                             EN:"English",
                             IT:"Italiano",
-                            FR:"Fran&#xE7;ais"
+                            FR:"Fran&#xE7;ais",
+                            RU:"Русский"
                         },
                         labels:{                            
                             toolName:{
@@ -578,12 +580,14 @@ ModManager.modules.push(function(){
                             languageUnavailable:{
                                 IT:"Questa avventura non &egrave; disponibile in italiano. Puoi escludere le avventure non tradotte dalle opzioni.",
                                 EN:"This adventure is not available in English. You can exclude untranslated adventures from the options.",
-                                FR:"Cette aventure n&#x27;est pas disponible en fran&#xE7;ais. Vous pouvez exclure les aventures non traduites des options."
+                                FR:"Cette aventure n&#x27;est pas disponible en fran&#xE7;ais. Vous pouvez exclure les aventures non traduites des options.",
+                                RU:"Это задание недоступно на русском языке. Вы можете исключить непереведённые задания в настройках."
                             },
                             questUnavailable:{
                                 IT:"Spiacente. Questa avventura non &egrave; disponibile.",
                                 EN:"Sorry. This adventure is not available.",
-                                FR:"D&#xE9;sol&#xE9;. Cette aventure n&#x27;est pas disponible."
+                                FR:"D&#xE9;sol&#xE9;. Cette aventure n&#x27;est pas disponible.",
+                                RU:"Извините. Это задание недоступно."
                             }
                         }
                     }

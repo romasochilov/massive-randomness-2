@@ -16,7 +16,9 @@ Tools=(function(){
         },
         ALLOWED_ENTITIES={
             IT:[ "ograve", "agrave", "egrave", "eacute", "ugrave", "igrave", "deg", "amp", "Egrave", "dash", "OElig", "ocirc" ],
-            EN:[ "amp", "dash", "OElig", "ocirc" ]
+            EN:[ "amp", "dash", "OElig", "ocirc" ],
+            FR:[ ],
+            RU:[ "amp", "dash" ]
         },
         ALLOWED_TAGS=[ "p", "/p", "ul", "/ul", "ol", "/ol", "li", "/li", "b", "/b", "i", "/i", "span class='phase'", "span class='displayonly'", "span class='printonly'", "span class='hiddentext'",  "/span", "br", "p class='credits'", "/a", /^a target=_blank href='[^']+'$/ ],
         ALLOWED_PLACEHOLDER_MODS=[ "capital" ],
@@ -36,7 +38,8 @@ Tools=(function(){
         WARNING_WORDS={
             EN:[ "wandering", "quest", "marker" ],
             IT:[ "quest", "xp", "avventura" ],
-            FR:[ ]
+            FR:[ ],
+            RU:[ ]
         },
         CAMPAIGN_CONFIGS = [
             {
@@ -436,7 +439,7 @@ Tools=(function(){
                             errors.push(errorHeader+" L["+lang+"] O["+aid+"]: invalid entity for "+lang+": &amp;"+m1+";");
                         return okTag;
                     }),
-                    checkArgument = orgArgument.replace(/([^0-9a-zA-Z() +/\-,.;:'!?_"]+)/g,function(m,m1){
+                    checkArgument = orgArgument.replace(/([^0-9a-zA-Z\u0400-\u04FF() +/\-,.;:'!?_"]+)/g,function(m,m1){
                         return "<span style='background-color:#000;color:#fff'>["+m1+"]</span>";
                     });
                 if (orgArgument != checkArgument)
@@ -1358,13 +1361,14 @@ Tools=(function(){
                 for (let l in resources.interface.supportedLanguages) {
                     let
                         count = translations[k].translations[l]||0,
-                        prc = count/total;
+                        prc = count/total,
+                        excludeTags = translationExcludeOption && translationExcludeOption[l];
                     if (prc > 1)
                         errors.push("Quest set "+k+": Invalid "+l+" percentage "+prc);
-                    else if ((prc <1) && (translations[k].packageData.provides.indexOf(translationExcludeOption[l][0]) == -1))
-                        errors.push("Quest set "+k+": missing provides tag "+translationExcludeOption[l][0]);
-                    else if ((prc == 1) && (translations[k].packageData.provides.indexOf(translationExcludeOption[l][0]) != -1))
-                        errors.push("Quest set "+k+": provides tag "+translationExcludeOption[l][0]+" not needed");
+                    else if (excludeTags && (prc <1) && (translations[k].packageData.provides.indexOf(excludeTags[0]) == -1))
+                        errors.push("Quest set "+k+": missing provides tag "+excludeTags[0]);
+                    else if (excludeTags && (prc == 1) && (translations[k].packageData.provides.indexOf(excludeTags[0]) != -1))
+                        errors.push("Quest set "+k+": provides tag "+excludeTags[0]+" not needed");
                     html+="<li>"+l+": "+formatPercentage(prc)+" ("+count+"/"+total+")</li>";
                 }
                 html+="</ul></li>";
