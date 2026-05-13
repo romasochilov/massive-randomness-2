@@ -6,7 +6,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-wulfsburg" ],
             label:{
-                EN:"Zombicide: Wulfsburg tiles"
+                EN:"Zombicide: Wulfsburg tiles",
+                RU:"Плитки Zombicide: Wulfsburg"
             },
             content:[
                 {
@@ -14,7 +15,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcWulfsburg:{
                             EN:"from Zombicide: Wulfsburg",
-                            IT:"da Zombicide: Wulfsburg"
+                            IT:"da Zombicide: Wulfsburg",
+                            RU:"из Zombicide: Wulfsburg"
                         }
                     }
                 },{

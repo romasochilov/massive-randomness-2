@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-blackplague" ],
             label:{
-                EN:"Zombicide: Black Plague tiles"
+                EN:"Zombicide: Black Plague tiles",
+                RU:"Плитки Zombicide: Black Plague"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcBlackPlague:{
                             EN:"from Zombicide: Black Plague",
-                            IT:"da Zombicide: Black Plague"
+                            IT:"da Zombicide: Black Plague",
+                            RU:"из Zombicide: Black Plague"
                         }
                     }
                 },{

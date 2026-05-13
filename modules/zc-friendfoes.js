@@ -6,7 +6,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-friendfoes" ],
             label:{
-                EN:"Zombicide: Friends and Foes tiles"
+                EN:"Zombicide: Friends and Foes tiles",
+                RU:"Плитки Zombicide: Friends and Foes"
             },
             content:[
                 {
@@ -14,7 +15,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcFriendFoes:{
                             EN:"from Zombicide: Friends and Foes",
-                            IT:"da Zombicide: Friends and Foes"
+                            IT:"da Zombicide: Friends and Foes",
+                            RU:"из Zombicide: Friends and Foes"
                         }
                     }
                 },{

@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "md2-heavenfall" ],
             label:{
-                EN:"MD2: Heavenfall box content"
+                EN:"MD2: Heavenfall box content",
+                RU:"Содержимое коробки MD2: Heavenfall"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxMd2Heavenfall:{
                             EN:"from MD2: Heavenfall",
-                            IT:"da MD2: Heavenfall"
+                            IT:"da MD2: Heavenfall",
+                            RU:"из MD2: Heavenfall"
                         }
                     }
                 },{

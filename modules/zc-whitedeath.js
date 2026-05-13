@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-whitedeath" ],
             label:{
-                EN:"Zombicide: White Death tiles"
+                EN:"Zombicide: White Death tiles",
+                RU:"Плитки Zombicide: White Death"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcWhiteDeath:{
                             EN:"from Zombicide: White Death",
-                            IT:"da Zombicide: White Death"
+                            IT:"da Zombicide: White Death",
+                            RU:"из Zombicide: White Death"
                         }
                     }
                 },{

@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "md2-hellscape" ],
             label:{
-                EN:"MD2: Hellscape box content"
+                EN:"MD2: Hellscape box content",
+                RU:"Содержимое коробки MD2: Hellscape"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxMd2CoreBox:{
                             EN:"from MD2: Hellscape",
-                            IT:"da MD2: Hellscape"
+                            IT:"da MD2: Hellscape",
+                            RU:"из MD2: Hellscape"
                         }
                     }
                 },{
@@ -23,73 +25,94 @@ ModManager.modules.push(function(){
                     data:{
                         yellowDie:{
                             EN:"<span class='symbol dice yellow'>Y</span>",
-                            IT:"<span class='symbol dice yellow'>G</span>"
+                            IT:"<span class='symbol dice yellow'>G</span>",
+                            RU:"<span class='symbol dice yellow'>Ж</span>"
                         },
                         orangeDie:{
                             EN:"<span class='symbol dice orange'>O</span>",
-                            IT:"<span class='symbol dice orange'>A</span>"
+                            IT:"<span class='symbol dice orange'>A</span>",
+                            RU:"<span class='symbol dice orange'>О</span>"
                         },
                         blueDie:{
                             EN:"<span class='symbol dice blue'>BL</span>",
-                            IT:"<span class='symbol dice blue'>B</span>"
+                            IT:"<span class='symbol dice blue'>B</span>",
+                            RU:"<span class='symbol dice blue'>С</span>"
                         },
                         blackDie:{
                             EN:"<span class='symbol dice black'>BK</span>",
-                            IT:"<span class='symbol dice black'>N</span>"
+                            IT:"<span class='symbol dice black'>N</span>",
+                            RU:"<span class='symbol dice black'>Ч</span>"
                         },
                         purpleDie:{
                             EN:"<span class='symbol dice purple'>P</span>",
-                            IT:"<span class='symbol dice purple'>V</span>"
+                            IT:"<span class='symbol dice purple'>V</span>",
+                            RU:"<span class='symbol dice purple'>Ф</span>"
                         },
                         greenDie:{
                             EN:"<span class='symbol dice green'>G</span>",
-                            IT:"<span class='symbol dice green'>V</span>"
+                            IT:"<span class='symbol dice green'>V</span>",
+                            RU:"<span class='symbol dice green'>З</span>"
                         },
                         redDie:{
                             EN:"<span class='symbol dice red'>R</span>",
-                            IT:"<span class='symbol dice red'>R</span>"
+                            IT:"<span class='symbol dice red'>R</span>",
+                            RU:"<span class='symbol dice red'>К</span>"
                         },
                         sword:{
-                            EN:"<span class='symbol icon sword'></span>"
+                            EN:"<span class='symbol icon sword'></span>",
+                            RU:"<span class='symbol icon sword'></span>"
                         },
                         shield:{
-                            EN:"<span class='symbol icon shield'></span>"
+                            EN:"<span class='symbol icon shield'></span>",
+                            RU:"<span class='symbol icon shield'></span>"
                         },
                         scratch:{
-                            EN:"<span class='symbol icon scratch'></span>"
+                            EN:"<span class='symbol icon scratch'></span>",
+                            RU:"<span class='symbol icon scratch'></span>"
                         },
                         fang:{
-                            EN:"<span class='symbol icon fang'></span>"
+                            EN:"<span class='symbol icon fang'></span>",
+                            RU:"<span class='symbol icon fang'></span>"
                         },
                         mana:{
-                            EN:"<span class='symbol icon mana'></span>"
+                            EN:"<span class='symbol icon mana'></span>",
+                            RU:"<span class='symbol icon mana'></span>"
                         },
                         face:{
-                            EN:"<span class='symbol icon face'></span>"
+                            EN:"<span class='symbol icon face'></span>",
+                            RU:"<span class='symbol icon face'></span>"
                         },
                         rangeRanged:{
-                            EN:"<span class='symbol icon rangeRanged'></span>"
+                            EN:"<span class='symbol icon rangeRanged'></span>",
+                            RU:"<span class='symbol icon rangeRanged'></span>"
                         },
                         rangeMelee:{
-                            EN:"<span class='symbol icon rangeMelee'></span>"
+                            EN:"<span class='symbol icon rangeMelee'></span>",
+                            RU:"<span class='symbol icon rangeMelee'></span>"
                         },
                         rangeMagic:{
-                            EN:"<span class='symbol icon rangeMagic'></span>"
+                            EN:"<span class='symbol icon rangeMagic'></span>",
+                            RU:"<span class='symbol icon rangeMagic'></span>"
                         },
                         corruptionToken:{
-                            EN:"<span class='symbol token corruption'></span>"
+                            EN:"<span class='symbol token corruption'></span>",
+                            RU:"<span class='symbol token corruption'></span>"
                         },
                         timeToken:{
-                            EN:"<span class='symbol token time'></span>"
+                            EN:"<span class='symbol token time'></span>",
+                            RU:"<span class='symbol token time'></span>"
                         },
                         mobToken:{
-                            EN:"<span class='symbol token mob'></span>"
+                            EN:"<span class='symbol token mob'></span>",
+                            RU:"<span class='symbol token mob'></span>"
                         },
                         frostToken:{
-                            EN:"<span class='symbol token frost'></span>"
+                            EN:"<span class='symbol token frost'></span>",
+                            RU:"<span class='symbol token frost'></span>"
                         },
                         fireToken:{
-                            EN:"<span class='symbol token fire'></span>"
+                            EN:"<span class='symbol token fire'></span>",
+                            RU:"<span class='symbol token fire'></span>"
                         }
                     }
                 },{
@@ -101,7 +124,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Ponte", "Ponti" ],
-                                EN:[ "Bridge", "Bridges"]
+                                EN:[ "Bridge", "Bridges"],
+                                RU:[ "мост", "мосты" ]
                             }
                         },
                         regularPortal:{
@@ -110,7 +134,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Portale dei Mostri Erranti", "Segnalini Portale dei Mostri Erranti" ],
-                                EN:[ "Roaming Monster Portal Token", "Roaming Monster Portal Tokens" ]
+                                EN:[ "Roaming Monster Portal Token", "Roaming Monster Portal Tokens" ],
+                                RU:[ "жетон портала блуждающего монстра", "жетоны портала блуждающего монстра" ]
                             }
                         },
                         portal3:{
@@ -120,7 +145,8 @@ ModManager.modules.push(function(){
                             aggregateTo:"greenPortal",
                             label:{
                                 IT:[ "Segnalino Portale 3+", "Segnalini Portale 3+" ],
-                                EN:[ "Portal Token 3+", "Portal Tokens 3+" ]
+                                EN:[ "Portal Token 3+", "Portal Tokens 3+" ],
+                                RU:[ "жетон портала 3+", "жетоны портала 3+" ]
                             }
                         },
                         portal5:{
@@ -130,7 +156,8 @@ ModManager.modules.push(function(){
                             aggregateTo:"greenPortal",
                             label:{
                                 IT:[ "Segnalino Portale 5+", "Segnalini Portale 5+" ],
-                                EN:[ "Portal Token 5+", "Portal Tokens 5+" ]
+                                EN:[ "Portal Token 5+", "Portal Tokens 5+" ],
+                                RU:[ "жетон портала 5+", "жетоны портала 5+" ]
                             }
                         },
                         door:{
@@ -140,7 +167,8 @@ ModManager.modules.push(function(){
                             splitFlippedTo:"openDoor",
                             label:{
                                 IT:[ "Segnalino Porta Chiusa", "Segnalini Porta Chiusa" ],
-                                EN:[ "Closed Door", "Closed Doors" ]
+                                EN:[ "Closed Door", "Closed Doors" ],
+                                RU:[ "закрытая дверь", "закрытые двери" ]
                             }
                         },
                         openDoor:{
@@ -149,7 +177,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Porta Aperta", "Segnalini Porta Aperta" ],
-                                EN:[ "Open Door", "Open Doors" ]
+                                EN:[ "Open Door", "Open Doors" ],
+                                RU:[ "открытая дверь", "открытые двери" ]
                             }
                         },
                         objective:{
@@ -160,7 +189,8 @@ ModManager.modules.push(function(){
                             splitFlippedTo:"objectiveFlipped",
                             label:{
                                 IT:[ "Segnalino Obiettivo con il Lato Colorato a Faccia in Su", "Segnalini Obiettivo con il Lato Colorato a Faccia in Su" ],
-                                EN:[ "Color-Side-Up Objective Token", "Color-Side-Up Objective Tokens" ]
+                                EN:[ "Color-Side-Up Objective Token", "Color-Side-Up Objective Tokens" ],
+                                RU:[ "жетон цели цветной стороной вверх", "жетоны цели цветной стороной вверх" ]
                             }
                         },
                         mob:{
@@ -169,7 +199,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Generazione", "Segnalini Generazione" ],
-                                EN:[ "Spawn Token", "Spawn Tokens" ]
+                                EN:[ "Spawn Token", "Spawn Tokens" ],
+                                RU:[ "жетон появления", "жетоны появления" ]
                             }
                         },
                         loot:{
@@ -179,7 +210,8 @@ ModManager.modules.push(function(){
                             type:"variableAmount",
                             label:{
                                 IT:[ "Segnalino Bottino", "Segnalini Bottino" ],
-                                EN:[ "Loot Token", "Loot Tokens" ]
+                                EN:[ "Loot Token", "Loot Tokens" ],
+                                RU:[ "жетон добычи", "жетоны добычи" ]
                             }
                         },
                         bearTrap:{
@@ -188,7 +220,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Tagliola", "Segnalini Tagliola" ],
-                                EN:[ "Bear Trap Token", "Bear Trap Tokens" ]
+                                EN:[ "Bear Trap Token", "Bear Trap Tokens" ],
+                                RU:[ "жетон медвежьего капкана", "жетоны медвежьего капкана" ]
                             }
                         },
                         spikeTrap:{
@@ -197,7 +230,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Trappola con Spuntoni", "Segnalini Trappola con Spuntoni" ],
-                                EN:[ "Spike Trap Token", "Spike Trap Tokens" ]
+                                EN:[ "Spike Trap Token", "Spike Trap Tokens" ],
+                                RU:[ "жетон шипованной ловушки", "жетоны шипованной ловушки" ]
                             }
                         },
                         forge:{
@@ -206,7 +240,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Forgia", "Segnalini Forgia" ],
-                                EN:[ "Forge Token", "Forge Tokens" ]
+                                EN:[ "Forge Token", "Forge Tokens" ],
+                                RU:[ "жетон кузницы", "жетоны кузницы" ]
                             }
                         },
                         pillar:{
@@ -215,7 +250,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Colonna", "Segnalini Colonna" ],
-                                EN:[ "Pillar Token", "Pillar Tokens" ]
+                                EN:[ "Pillar Token", "Pillar Tokens" ],
+                                RU:[ "жетон колонны", "жетоны колонны" ]
                             }
                         },
                         regularChest:{
@@ -224,7 +260,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Forziere Regolare", "Segnalini Forziere Regolare" ],
-                                EN:[ "Regular Chest Token", "Regular Chest Tokens" ]
+                                EN:[ "Regular Chest Token", "Regular Chest Tokens" ],
+                                RU:[ "жетон обычного сундука", "жетоны обычного сундука" ]
                             }
                         },
                         greaterChest:{
@@ -233,7 +270,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Forziere Superiore", "Segnalini Forziere Superiore" ],
-                                EN:[ "Greater Chest Token", "Greater Chest Tokens" ]
+                                EN:[ "Greater Chest Token", "Greater Chest Tokens" ],
+                                RU:[ "жетон большого сундука", "жетоны большого сундука" ]
                             }
                         },
                         fountain:{
@@ -242,7 +280,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Fontana", "Segnalini Fontana" ],
-                                EN:[ "Fountain Token", "Fountain Tokens" ]
+                                EN:[ "Fountain Token", "Fountain Tokens" ],
+                                RU:[ "жетон фонтана", "жетоны фонтана" ]
                             }
                         },
                         corruption:{
@@ -252,7 +291,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Corruzione", "Segnalini Corruzione" ],
-                                EN:[ "Corruption Token", "Corruption Tokens" ]
+                                EN:[ "Corruption Token", "Corruption Tokens" ],
+                                RU:[ "жетон порчи", "жетоны порчи" ]
                             }
                         },
                         time:{
@@ -262,7 +302,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Tempo", "Segnalini Tempo" ],
-                                EN:[ "Time Token", "Time Tokens" ]
+                                EN:[ "Time Token", "Time Tokens" ],
+                                RU:[ "жетон времени", "жетоны времени" ]
                             }
                         },
                         frost:{
@@ -271,7 +312,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Gelo", "Segnalini Gelo" ],
-                                EN:[ "Frost Token", "Frost Tokens" ]
+                                EN:[ "Frost Token", "Frost Tokens" ],
+                                RU:[ "жетон холода", "жетоны холода" ]
                             }
                         },
                         fire:{
@@ -280,7 +322,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Fuoco", "Segnalini Fuoco" ],
-                                EN:[ "Fire Token", "Fire Tokens" ]
+                                EN:[ "Fire Token", "Fire Tokens" ],
+                                RU:[ "жетон огня", "жетоны огня" ]
                             }
                         },
                 
@@ -293,7 +336,8 @@ ModManager.modules.push(function(){
                             type:"upTo",
                             label:{
                                 IT:[ "Segnalino Portale", "Segnalini Portale" ],
-                                EN:[ "Portal Token", "Portal Tokens" ]
+                                EN:[ "Portal Token", "Portal Tokens" ],
+                                RU:[ "жетон портала", "жетоны портала" ]
                             }
                         },
                         objectiveFlipped:{
@@ -302,7 +346,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Segnalino Obiettivo Grigio", "Segnalini Obiettivo Grigio" ],
-                                EN:[ "Gray Objective Token", "Gray Objective Tokens" ]
+                                EN:[ "Gray Objective Token", "Gray Objective Tokens" ],
+                                RU:[ "серый жетон цели", "серые жетоны цели" ]
                             }
                         },
                         startPoint:{
@@ -311,7 +356,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Zona di Partenza degli Eroi", "Zone di Partenza degli Eroi" ],
-                                EN:[ "Hero Starting Zone", "Hero Starting Zones" ]
+                                EN:[ "Hero Starting Zone", "Hero Starting Zones" ],
+                                RU:[ "стартовая зона героев", "стартовые зоны героев" ]
                             }
                         },
                         startMob:{
@@ -320,7 +366,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Orda di Partenza", "Orde di Partenza" ],
-                                EN:[ "Starting Mob Zone", "Starting Mob Zones" ]
+                                EN:[ "Starting Mob Zone", "Starting Mob Zones" ],
+                                RU:[ "стартовая зона орды", "стартовые зоны орды" ]
                             }
                         },
                         startRoaming:{
@@ -329,7 +376,8 @@ ModManager.modules.push(function(){
                             },
                             label:{
                                 IT:[ "Mostro Errante di Partenza", "Mostri Erranti di Partenza" ],
-                                EN:[ "Starting Roaming Monster Zone", "Starting Roaming Monster Zones" ]
+                                EN:[ "Starting Roaming Monster Zone", "Starting Roaming Monster Zones" ],
+                                RU:[ "стартовая зона блуждающего монстра", "стартовые зоны блуждающего монстра" ]
                             }
                         }
                     }
@@ -625,7 +673,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "bridge-default-twoexits" ],
             label:{
-                EN:"MD2: Hellscape bridge (two exits)"
+                EN:"MD2: Hellscape bridge (two exits)",
+                RU:"MD2: Hellscape мост (два выхода)"
             },
             content:[
                 {
@@ -655,7 +704,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "bridge-default-fourexits" ],
             label:{
-                EN:"MD2: Hellscape bridge (four exits)"
+                EN:"MD2: Hellscape bridge (four exits)",
+                RU:"MD2: Hellscape мост (четыре выхода)"
             },
             content:[
                 {

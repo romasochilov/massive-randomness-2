@@ -6,7 +6,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "zc-greenhorde" ],
             label:{
-                EN:"Zombicide: Green Horde tiles"
+                EN:"Zombicide: Green Horde tiles",
+                RU:"Плитки Zombicide: Green Horde"
             },
             content:[
                 {
@@ -14,7 +15,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxZcGreenHorde:{
                             EN:"from Zombicide: Green Horde",
-                            IT:"da Zombicide: Green Horde"
+                            IT:"da Zombicide: Green Horde",
+                            RU:"из Zombicide: Green Horde"
                         }
                     }
                 },{

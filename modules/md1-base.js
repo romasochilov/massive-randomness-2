@@ -6,7 +6,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "md1-base" ],
             label:{
-                EN:"Massive Darkness 1 box content (tiles)"
+                EN:"Massive Darkness 1 box content (tiles)",
+                RU:"Содержимое коробки Massive Darkness 1 (плитки)"
             },
             content:[
                 {

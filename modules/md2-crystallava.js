@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "md2-crystallava-cl" ],
             label:{
-                EN:"MD: A Quest of Crystal & Lava box content (crystal & lava tiles)"
+                EN:"MD: A Quest of Crystal & Lava box content (crystal & lava tiles)",
+                RU:"Содержимое коробки MD: A Quest of Crystal & Lava (плитки кристалла и лавы)"
             },
             content:[
                 {
@@ -15,7 +16,8 @@ ModManager.modules.push(function(){
                     data:{
                         boxMd2CrystalLava:{
                             EN:"from MD: A Quest of Crystal &amp; Lava",
-                            IT:"da MD: Una Missione di Lava e Cristalli"
+                            IT:"da MD: Una Missione di Lava e Cristalli",
+                            RU:"из MD: A Quest of Crystal &amp; Lava"
                         }
                     }
                 },
@@ -234,7 +236,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "md2-crystallava-up" ],
             label:{
-                EN:"MD A Quest of Crystal & Lava box content (Massive Darkness 1 tiles copy)"
+                EN:"MD A Quest of Crystal & Lava box content (Massive Darkness 1 tiles copy)",
+                RU:"Содержимое коробки MD A Quest of Crystal & Lava (копия плиток Massive Darkness 1)"
             },
             content:[
                 {
