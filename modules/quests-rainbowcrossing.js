@@ -4,13 +4,15 @@ ModManager.modules.push(function(){
         QUESTVICTORY = [
             {
                 IT:[ "la Missione termina con una vittoria", "terminare la Missione con una vittoria" ],
-                EN:[ "the Mission ends with a victory", "end the Mission with a victory" ]
+                EN:[ "the Mission ends with a victory", "end the Mission with a victory" ],
+                RU:["Миссия заканчивается победой", "завершить Миссию победой"]
             }
         ],
         BOSSBEAT = [
             {
                 IT:[ "viene eliminato", "viene eliminata" ],
-                EN:[ "it is eliminated", "it is eliminated" ]
+                EN:[ "it is eliminated", "it is eliminated" ],
+                RU:["это устранено", "это устранено"]
             }
         ];
 
@@ -20,7 +22,8 @@ ModManager.modules.push(function(){
             needs:[ "quests-default", "md2-hellscape" ],
             provides:[ "quests", "quests-rainbowcrossing", "untranslated-fr" ],
             label:{
-                 EN:"MD2: Rainbow Crossing inspired quest models"
+                 EN:"MD2: Rainbow Crossing inspired quest models",
+                 RU:"MD2: модели квестов, вдохновленные Rainbow Crossing"
             },
             content:[
                 {
@@ -31,11 +34,13 @@ ModManager.modules.push(function(){
                             forMaps:[2],
                             type:"collectAndBoss",
                             objective:{
-                                EN:"Collect tokens to make the boss vulnerable and beat it to win."
+                                EN:"Collect tokens to make the boss vulnerable and beat it to win.",
+                                RU:"Собирайте жетоны, чтобы сделать босса уязвимым, и победите его, чтобы победить."
                             },
                             by:{
                                 IT:"Ispirato all'avventura di MD2 Rainbow Crossing \"Bear Hugs\"",
-                                EN:"Inspired by the MD2 Rainbow Crossing quest \"Bear Hugs\""
+                                EN:"Inspired by the MD2 Rainbow Crossing quest \"Bear Hugs\"",
+                                RU:"Вдохновлен квестом MD2 Rainbow Crossing «Медвежьи объятия»."
                             },
                             suggestedTilesCount:5,
                             versions:[
@@ -46,73 +51,91 @@ ModManager.modules.push(function(){
                                                 guardian:[
                                                     {
                                                         IT:[ "il Guardiano", "la Stretta del Guardiano", "la stretta del Guardiano lo eliminer&agrave;", "Stretta Mortale", "&egrave; diventato", "attaccato o influenzato", "lo", "rimasto sopito", "lo ha reso", "lo acceca", "colpito normalmente", "di liberarlo" ],
-                                                        EN:[ "the Guardian", "the Guardian's Grip", "the Guardian's grip will eliminate it", "Deathgrip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free him" ]
+                                                        EN:[ "the Guardian", "the Guardian's Grip", "the Guardian's grip will eliminate it", "Deathgrip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free him" ],
+                                                        RU:["Хранитель", "Хватка Стража", "Хватка Стража устранит это", "Смертельная хватка", "стал", "подвергся нападению или пострадал", "it", "остался в спячке", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
                                                     },{
                                                         IT:[ "la Fiera", "la Morsa della Fiera", "la morsa della Fiera lo eliminer&agrave;", "Morsa Fatale", "&egrave; diventata", "attaccata o influenzata", "la", "rimasta sopita", "lo ha resa", "la acceca", "colpita normalmente", "di liberarla" ],
-                                                        EN:[ "the Creature", "the Creature's Grip", "the Creature's grip will eliminate it", "Fatal Grip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free it" ]
+                                                        EN:[ "the Creature", "the Creature's Grip", "the Creature's grip will eliminate it", "Fatal Grip", "has become", "attacked or affected", "it", "has remained dormant", "has made it", "blinds it", "hit normally", "to free it" ],
+                                                        RU:["Существо", "Хватка существа", "Хватка Существа устранит это", "Роковая хватка", "стал", "подвергся нападению или пострадал", "it", "остался в спячке", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
                                                     },{
                                                         IT:[ "la Bestia", "la Stretta della Bestia", "la stretta della Bestia lo eliminer&agrave;", "Stretta Bestiale", "&egrave; diventata", "attaccata o influenzata", "la", "rimasta sopita", "lo ha resa", "la acceca", "colpita normalmente", "di liberarla" ],
-                                                        EN:[ "the Beast", "the Beast's Grip", "the Beast's grip will eliminate it", "Beast's Grip", "has become", "attacked or affected", "it", "left dormant", "has made it", "blinds it", "hit normally", "to free it" ]
+                                                        EN:[ "the Beast", "the Beast's Grip", "the Beast's grip will eliminate it", "Beast's Grip", "has become", "attacked or affected", "it", "left dormant", "has made it", "blinds it", "hit normally", "to free it" ],
+                                                        RU:["Зверь", "Хватка Зверя", "Хватка Зверя устранит это", "Звериная хватка", "стал", "подвергся нападению или пострадал", "it", "оставил бездействующим", "сделал это", "ослепляет это", "бей нормально", "освободить его"]
                                                     }
                                                 ],
                                                 type:[
                                                     {
                                                         IT:[ "&egrave; una creatura solitamente pacifica ma," ],
-                                                        EN:[ "is usually peaceful but," ]
+                                                        EN:[ "is usually peaceful but," ],
+                                                        RU:["обычно мирный, но,"]
                                                     },{
                                                         IT:[ "non ha mai lasciato il suo Regno ma," ],
-                                                        EN:[ "has never left its Kingdom but," ]
+                                                        EN:[ "has never left its Kingdom but," ],
+                                                        RU:["никогда не покидал своего королевства, но,"]
                                                     },{
                                                         IT:[ "&egrave; {label.guardian@7} in un lungo sonno ma ora," ],
-                                                        EN:[ "{label.guardian@7} in a long sleep but now," ]
+                                                        EN:[ "{label.guardian@7} in a long sleep but now," ],
+                                                        RU:["{label.guardian@7} долго спал, но сейчас"]
                                                     }
                                                 ],
                                                 reason:[
                                                     {
                                                         IT:[ "a causa della corruzione Oscura," ],
-                                                        EN:[ "due to the Dark corruption," ]
+                                                        EN:[ "due to the Dark corruption," ],
+                                                        RU:["из-за Темной порчи,"]
                                                     },{
                                                         IT:[ "per qualche misterioso motivo," ],
-                                                        EN:[ "for some mysterious reason," ]
+                                                        EN:[ "for some mysterious reason," ],
+                                                        RU:["по какой-то загадочной причине,"]
                                                     },{
                                                         IT:[ "dopo la Grande Guerra," ],
-                                                        EN:[ "after the Great War," ]
+                                                        EN:[ "after the Great War," ],
+                                                        RU:["после Великой войны,"]
                                                     }
                                                 ],
                                                 effect:[
                                                     {
                                                         IT:[ "{label.guardian@4} terribilmente potente" ],
-                                                        EN:[ "it {label.guardian@4} scaringly powerful" ]
+                                                        EN:[ "it {label.guardian@4} scaringly powerful" ],
+                                                        RU:["это {label.guardian@4} пугающе мощно"]
                                                     },{
                                                         IT:[ "una rabbia incontenibile {label.guardian@8} inarrestabile" ],
-                                                        EN:[ "an uncontrollable rage {label.guardian@8} unstoppable" ]
+                                                        EN:[ "an uncontrollable rage {label.guardian@8} unstoppable" ],
+                                                        RU:["неконтролируемая ярость {label.guardian@8}, которую невозможно остановить"]
                                                     },{
                                                         IT:[ "un implacabile desiderio di distruzione {label.guardian@9}" ],
-                                                        EN:[ "a relentless desire for destruction {label.guardian@9}" ]
+                                                        EN:[ "a relentless desire for destruction {label.guardian@9}" ],
+                                                        RU:["неустанное стремление к разрушению {label.guardian@9}"]
                                                     }
                                                 ],
                                                 spell:[
                                                     {
                                                         IT:[ "spezzare l'Incantesimo", "spezza l'Incantesimo che influenza", "l'Incantesimo", "le Gemme dell'Incantesimo", "una Gemma dell'Incantesimo", "spezzare l'Incantesimo che {label.guardian@6} influenza", "tutte le Gemme dell'Incantesimo" ],
-                                                        EN:[ "break the Spell", "break the Spell that affects", "the Spell", "the Spell Gems", "a Spell Gem", "break the Spell that affects {label.guardian@6}", "all the Spell Gems" ]
+                                                        EN:[ "break the Spell", "break the Spell that affects", "the Spell", "the Spell Gems", "a Spell Gem", "break the Spell that affects {label.guardian@6}", "all the Spell Gems" ],
+                                                        RU:["разрушить заклинание", "разрушить заклинание, которое влияет", "Заклинание", "Камни заклинаний", "драгоценный камень заклинаний", "разрушить заклинание, влияющее на {label.guardian@6}", "все камни заклинаний"]
                                                     },{
                                                         IT:[ "sciogliere la Maledizione", "scogliere la Maledizione che influenza", "la Maledizione", "i Totem della Maledizione", "un Totem della Maledizione", "sciogliere la Maledizione che {label.guardian@6} influenza", "tutti i Totem della Maledizione" ],
-                                                        EN:[ "remove the Curse", "remove the Curse that affects", "the Curse", "the Curse Totems", "a Curse Totem", "remove the Curse that affects {label.guardian@6}", "all the Curse Totems" ]
+                                                        EN:[ "remove the Curse", "remove the Curse that affects", "the Curse", "the Curse Totems", "a Curse Totem", "remove the Curse that affects {label.guardian@6}", "all the Curse Totems" ],
+                                                        RU:["снять проклятие", "снять проклятие, которое влияет", "Проклятие", "тотемы проклятия", "тотем проклятия", "удалить проклятие, влияющее на {label.guardian@6}", "все тотемы проклятия"]
                                                     },{
                                                         IT:[ "annullare il Sortilegio", "annullare il Sortilegio che influenza", "il Sortilegio", "le Sfere del Sortilegio", "una Sfera del Sortilegio", "spezzare il Sortilegio che {label.guardian@6} influenza", "tutte le Sfere del Sortilegio" ],
-                                                        EN:[ "cancel the Spell", "cancel the Spell that affects", "the Spell", "the Spell Spheres", "a Spell Sphere", "break the Spell that affects {label.guardian@6}", "all the Spell Spheres" ]
+                                                        EN:[ "cancel the Spell", "cancel the Spell that affects", "the Spell", "the Spell Spheres", "a Spell Sphere", "break the Spell that affects {label.guardian@6}", "all the Spell Spheres" ],
+                                                        RU:["отменить заклинание", "отменить заклинание, которое влияет", "Заклинание", "Сферы Заклинаний", "сфера заклинаний", "разрушить заклинание, влияющее на {label.guardian@6}", "все сферы заклинаний"]
                                                     }
                                                 ],
                                                 hope:[
                                                     {
                                                         IT:[ "sperando {label.guardian@11} dalla morsa dell'Oscurit&agrave;!" ],
-                                                        EN:[ "hoping {label.guardian@11} from the grip of the Darkness!" ]
+                                                        EN:[ "hoping {label.guardian@11} from the grip of the Darkness!" ],
+                                                        RU:["надеясь, что {label.guardian@11} вырвется из тисков Тьмы!"]
                                                     },{
                                                         IT:[ "cercando di non rimetterci la pelle!" ],
-                                                        EN:[ "trying not to lose our skin!" ]
+                                                        EN:[ "trying not to lose our skin!" ],
+                                                        RU:["стараемся не потерять шкуру!"]
                                                     },{
                                                         IT:[ "o altrimenti..." ],
-                                                        EN:[ "or else..." ]
+                                                        EN:[ "or else..." ],
+                                                        RU:["или еще..."]
                                                     }
                                                 ],
                                                 bossBeat:BOSSBEAT,
@@ -120,7 +143,8 @@ ModManager.modules.push(function(){
                                                 collectOptionalItems:[
                                                     {
                                                         IT:[ "a eliminare {label.spell@6}", "eliminando tutti i segnalini Obiettivo sul lato colorato" , "{tokensCount.objective}" ],
-                                                        EN:[ "to eliminate {label.spell@6}", "eliminating all the Objective token on the colored side", "{tokensCount.objective}"]
+                                                        EN:[ "to eliminate {label.spell@6}", "eliminating all the Objective token on the colored side", "{tokensCount.objective}"],
+                                                        RU:["удалить {label.spell@6}", "уничтожение всех жетонов цели на цветной стороне", "{tokensCount.objective}"]
                                                     }
                                                 ]
                                             }
@@ -128,23 +152,28 @@ ModManager.modules.push(function(){
                                     ],
                                     title:[
                                         {
-                                            EN:"{label.guardian:capital@3}"
+                                            EN:"{label.guardian:capital@3}",
+                                            RU:"{label.guardian:capital@3}"
                                         },{
-                                            EN:"{label.spell:capital@0}"
+                                            EN:"{label.spell:capital@0}",
+                                            RU:"{label.spell:capital@0}"
                                         },{
-                                            EN:"{label.spell:capital@3}"
+                                            EN:"{label.spell:capital@3}",
+                                            RU:"{label.spell:capital@3}"
                                         }
                                     ],
                                     story:[
                                         {
                                             IT:"{label.guardian:capital@0} {label.type@0} {label.reason@0} {label.effect@0}. Gli Eroi devono {label.spell@5}, {label.hope@0}",
-                                            EN:"{label.guardian:capital@0} {label.type@0} {label.reason@0} {label.effect@0}. Heroes must {label.spell@5}, {label.hope@0}"
+                                            EN:"{label.guardian:capital@0} {label.type@0} {label.reason@0} {label.effect@0}. Heroes must {label.spell@5}, {label.hope@0}",
+                                            RU:"{label.guardian:capital@0} {label.type@0} {label.reason@0} {label.effect@0}. Герои должны {label.spell@5}, {label.hope@0}"
                                         }
                                     ],
                                     objectivesHeader:[
                                         {
                                             IT:"Completate gli obiettivi nell'ordine indicato:",
-                                            EN:"Complete the objectives in order:"
+                                            EN:"Complete the objectives in order:",
+                                            RU:"Выполните цели по порядку:"
                                         }
                                     ],
                                     challenges:[
@@ -158,12 +187,14 @@ ModManager.modules.push(function(){
                                                 type:"objective",
                                                 name:[
                                                     {
-                                                        EN:"{label.spell:capital@0}"
+                                                        EN:"{label.spell:capital@0}",
+                                                        RU:"{label.spell:capital@0}"
                                                     }
                                                 ],
                                                 summary:[
                                                     {
-                                                        EN:"{label.spell:capital@1} {label.guardian@0}"
+                                                        EN:"{label.spell:capital@1} {label.guardian@0}",
+                                                        RU:"{label.spell:capital@1} {label.guardian@0}"
                                                     }
                                                 ]
                                             }
@@ -173,13 +204,15 @@ ModManager.modules.push(function(){
                                                 name:[
                                                     {
                                                         IT:"Sconfiggere {label.guardian@0}",
-                                                        EN:"Defeat {label.guardian@0}"
+                                                        EN:"Defeat {label.guardian@0}",
+                                                        RU:"Победить {label.guardian@0}"
                                                     }
                                                 ],
                                                 summary:[
                                                     {
                                                         IT:"Elimina {label.guardian@0}",
-                                                        EN:"Eliminate {label.guardian@0}"
+                                                        EN:"Eliminate {label.guardian@0}",
+                                                        RU:"Удалить {label.guardian@0}"
                                                     }
                                                 ]
                                             }
@@ -189,19 +222,22 @@ ModManager.modules.push(function(){
                                                 name:[
                                                     {
                                                         IT:"Preparazione Speciale",
-                                                        EN:"Special Preparation"
+                                                        EN:"Special Preparation",
+                                                        RU:"Специальная подготовка"
                                                     }
                                                 ],
                                                 explanation:[
                                                     {
                                                         IT:"Generare un Mostro Errante di livello 5 nella Zona contrassegnata dal segnalino Corruzione {symbol.corruptionToken} e rimuovi quel segnalino. Questo &egrave; {label.guardian@0}.",
-                                                        EN:"Generate a Level 5 Roaming Monster in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}."
+                                                        EN:"Generate a Level 5 Roaming Monster in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}.",
+                                                        RU:"Создайте бродячего монстра 5-го уровня в зоне токена коррупции {symbol.corruptionToken} и удалите этот жетон. Это {label.guardian@0}."
                                                     }
                                                 ],
                                                 campaignExplanation:[
                                                     {
                                                         IT: "Generare {label.campaignBoss@0} nella Zona contrassegnata dal segnalino Corruzione {symbol.corruptionToken} e rimuovi quel segnalino. Questo &egrave; {label.guardian@0}.",
-                                                        EN: "Spawn {label.campaignBoss@0} in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}."
+                                                        EN: "Spawn {label.campaignBoss@0} in the Corruption token {symbol.corruptionToken} Zone and remove that token. This is {label.guardian@0}.",
+                                                        RU:"Создайте {label.campaignBoss@0} в зоне {symbol.corruptionToken} токена коррупции и удалите этот токен. Это {label.guardian@0}."
                                                     }
                                                 ]
                                             }
@@ -210,13 +246,15 @@ ModManager.modules.push(function(){
                                                 type:"rule",
                                                 name:[
                                                     {
-                                                        EN:"{label.guardian:capital@0}"
+                                                        EN:"{label.guardian:capital@0}",
+                                                        RU:"{label.guardian:capital@0}"
                                                     }
                                                 ],
                                                 explanation:[
                                                     {
                                                         IT:"Se non sono stati eliminati {label.collectOptionalItems@2} segnalini Obiettivo sul lato colorato, {label.guardian@0} non pu&ograve; essere {label.guardian@5} da qualsiasi abilit&agrave; o effetto, gli Eroi non possono entrare nella sua Zona e all'inizio di ogni Fase dei Nemici {label.guardian@0} si muove di 2 Zone verso l'Eroe pi&ugrave; vicino. Se {label.guardian@0} entra nella Zona di un Eroe, {label.guardian@2} e la Missione termina con una sconfitta.",
-                                                        EN:"If {label.collectOptionalItems@2} Objective tokens on the colored side haven't been removed, {label.guardian@0} cannot be {label.guardian@5} by any ability or effect, Heroes cannot enter its Zone, and at the start of each Enemy Phase {label.guardian@0} moves 2 Zones toward the closest Hero. If {label.guardian@0} enters a Hero's Zone, {label.guardian@2} and the Mission ends in defeat."
+                                                        EN:"If {label.collectOptionalItems@2} Objective tokens on the colored side haven't been removed, {label.guardian@0} cannot be {label.guardian@5} by any ability or effect, Heroes cannot enter its Zone, and at the start of each Enemy Phase {label.guardian@0} moves 2 Zones toward the closest Hero. If {label.guardian@0} enters a Hero's Zone, {label.guardian@2} and the Mission ends in defeat.",
+                                                        RU:"Если жетоны цели {label.collectOptionalItems@2} на цветной стороне не были удалены, {label.guardian@0} не может быть {label.guardian@5} какой-либо способностью или эффектом, герои не могут войти в свою зону, и в начале каждой вражеской фазы {label.guardian@0} перемещает 2 зоны к ближайшему герою. Если {label.guardian@0} входит в Зону Героя, {label.guardian@2} и Миссия завершается поражением."
                                                     }
                                                 ]
                                             }
@@ -225,25 +263,29 @@ ModManager.modules.push(function(){
                                                 type:"rule",
                                                 name:[
                                                     {
-                                                        EN:"{label.spell:capital@2}"
+                                                        EN:"{label.spell:capital@2}",
+                                                        RU:"{label.spell:capital@2}"
                                                     }
                                                 ],
                                                 explanation:[
                                                     {
                                                         IT:"I segnalini Obiettivo sul lato colorato rappresentano {label.spell@3}. Qualsiasi Eroe nella Zona di {label.spell@4} pu&ograve; spendere 1 azione per scartare il segnalino. Ogni volta che un segnalino viene scartato, tutti gli Eroi guadagnano 5 PE. Una volta che {label.collectOptionalItems@2} segnalini Obiettivo sul lato colorato sono stati rimossi, {label.guardian@0} pu&ograve; essere {label.guardian@10}.",
-                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Each time a token is discarded, all Heroes gets 5 XP. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}."
+                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Each time a token is discarded, all Heroes gets 5 XP. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}.",
+                                                        RU:"Жетоны цели на цветной стороне обозначают {label.spell@3}. Любой Герой в Зоне {label.spell@4} может потратить 1 действие, чтобы сбросить жетон. Каждый раз, когда жетон сбрасывается, все герои получают 5 очков опыта. После удаления жетонов целей {label.collectOptionalItems@2} на цветной стороне {label.guardian@0} может стать {label.guardian@10}."
                                                     }
                                                 ],
                                                 campaignExplanation:[
                                                     {
                                                         IT:"I segnalini Obiettivo sul lato colorato rappresentano {label.spell@3}. Qualsiasi Eroe nella Zona di {label.spell@4} pu&ograve; spendere 1 azione per scartare il segnalino. Una volta che {label.collectOptionalItems@2} segnalini Obiettivo sul lato colorato sono stati rimossi, {label.guardian@0} pu&ograve; essere {label.guardian@10}.",
-                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}."
+                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}.",
+                                                        RU:"Жетоны цели на цветной стороне обозначают {label.spell@3}. Любой Герой в Зоне {label.spell@4} может потратить 1 действие, чтобы сбросить жетон. После удаления жетонов целей {label.collectOptionalItems@2} на цветной стороне {label.guardian@0} может стать {label.guardian@10}."
                                                     }
                                                 ],
                                                 miniCampaignExplanation:[
                                                     {
                                                         IT:"I segnalini Obiettivo sul lato colorato rappresentano {label.spell@3}. Qualsiasi Eroe nella Zona di {label.spell@4} pu&ograve; spendere 1 azione per scartare il segnalino. Ogni volta che un segnalino viene scartato, tutti gli Eroi guadagnano {label.miniCampaignObjectivesXp:split:tokensCount.objective} PE. Una volta che {label.collectOptionalItems@2} segnalini Obiettivo sul lato colorato sono stati rimossi, {label.guardian@0} pu&ograve; essere {label.guardian@10}.",
-                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Each time a token is discarded, all Heroes gets {label.miniCampaignObjectivesXp:split:tokensCount.objective} XP. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}."
+                                                        EN:"The Objective tokens on the colored side represent {label.spell@3}. Any Hero in {label.spell@4}'s Zone can spend 1 action to discard the token. Each time a token is discarded, all Heroes gets {label.miniCampaignObjectivesXp:split:tokensCount.objective} XP. Once {label.collectOptionalItems@2} Objective tokens on the colored side have been removed, {label.guardian@0} can be {label.guardian@10}.",
+                                                        RU:"Жетоны цели на цветной стороне обозначают {label.spell@3}. Любой Герой в Зоне {label.spell@4} может потратить 1 действие, чтобы сбросить жетон. Каждый раз, когда жетон сбрасывается, все герои получают {label.miniCampaignObjectivesXp:split:tokensCount.objective} XP. После удаления жетонов целей {label.collectOptionalItems@2} на цветной стороне {label.guardian@0} может стать {label.guardian@10}."
                                                     }
                                                 ]
                                             }
@@ -253,13 +295,15 @@ ModManager.modules.push(function(){
                                                 name:[
                                                     {
                                                         IT:"Faccia a Faccia",
-                                                        EN:"Face to Face"
+                                                        EN:"Face to Face",
+                                                        RU:"Лицом к лицу"
                                                     }
                                                 ],
                                                 explanation:[
                                                     {
                                                         IT:"Se gli eroi sconfiggono {label.guardian:capital@0} {label.questVictory@0}.",
-                                                        EN:"If the heroes defeat {label.guardian:capital@0} {label.questVictory@0}."
+                                                        EN:"If the heroes defeat {label.guardian:capital@0} {label.questVictory@0}.",
+                                                        RU:"Если герои победят {label.guardian:capital@0} {label.questVictory@0}."
                                                     }
                                                 ]
                                             }
@@ -298,10 +342,12 @@ ModManager.modules.push(function(){
                                                 name:{
                                                     IT:"Sconfiggere {boss.bossBadName@0}",
                                                     EN:"Defeat {boss.bossBadName@0}",
+                                                    RU:"Победить {boss.bossBadName@0}",
                                                 },
                                                 summary:{
                                                     IT:"Risolvere la questione una volta per tutte sconfiggendo {boss.bossBadName@0}",
-                                                    EN:"Solve the issue once and for all by defeating {boss.bossBadName@0}"
+                                                    EN:"Solve the issue once and for all by defeating {boss.bossBadName@0}",
+                                                    RU:"Решите проблему раз и навсегда, победив {boss.bossBadName@0}."
                                                 }
                                             }
                                         ],
