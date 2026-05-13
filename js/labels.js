@@ -17,9 +17,10 @@ Labels=(function(){
                     subOut = values[parts[0]][language];
                 if (text[1])
                     subOut = subOut[text[1]];
-                if (parts[1] == "capital")
+                if (parts[1] == "capital") {
+                    if (!subOut) return "";
                     return subOut[0].toUpperCase()+subOut.substr(1,subOut.length);
-                else
+                } else
                     return subOut;
             } else
                 return wrap(flags,m1,"{???}");
@@ -76,6 +77,7 @@ Labels=(function(){
                         subOut = getLabel(flags,resources,result,language,result.labels[parts[0]], text[1]);
                     switch (parts[1]) {
                         case "capital":{
+                            if (!subOut) return wrap(flags,m1,"");
                             return wrap(flags,m1,subOut[0].toUpperCase()+subOut.substr(1,subOut.length));
                             break;
                         }

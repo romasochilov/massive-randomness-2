@@ -1,0 +1,15 @@
+{
+  "name": "massive-randomness-2",
+  "version": "1.0.0",
+  "description": "A Massive Darkness 2 random quest and campaign generator.",
+  "private": true,
+  "scripts": {
+    "serve": "python3 -m http.server 4173",
+    "smoke": "node tools/smoke.js",
+    "smoke:ru": "node tools/smoke.js RU",
+    "smoke:en": "node tools/smoke.js EN"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.0"
+  }
+}
