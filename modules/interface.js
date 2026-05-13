@@ -7,7 +7,8 @@ ModManager.modules.push(function(){
             needs:[ ],
             provides:[ "interface" ],
             label:{
-                EN:"Massive Randomness 2 UI configuration"
+                EN:"Massive Randomness 2 UI configuration",
+                RU:"Конфигурация интерфейса Massive Randomness 2"
             },
             content:[
                 {
@@ -19,7 +20,8 @@ ModManager.modules.push(function(){
                                 isMandatory:true,
                                 title:{
                                     IT:"Materiali disponibili",
-                                    EN:"Available components"
+                                    EN:"Available components",
+                                    RU:"Доступные компоненты"
                                 },
                                 entries:[
                                     {
@@ -28,11 +30,13 @@ ModManager.modules.push(function(){
                                         isDefault:true,
                                         label:{
                                             IT:"Massive Darkness 2: Hellscape",
-                                            EN:"Massive Darkness 2: Hellscape"
+                                            EN:"Massive Darkness 2: Hellscape",
+                                            RU:"Massive Darkness 2: Hellscape"
                                         },
                                         description:{
                                             IT:"La scatola base del gioco",
-                                            EN:"The game core box"
+                                            EN:"The game core box",
+                                            RU:"Базовая коробка игры"
                                         },
                                         tags:[ "md2-hellscape" ]
                                     },{
@@ -40,22 +44,26 @@ ModManager.modules.push(function(){
                                         idOption:"md2-heavenfall",
                                         label:{
                                             IT:"Massive Darkness 2: Heavenfall",
-                                            EN:"Massive Darkness 2: Heavenfall"
+                                            EN:"Massive Darkness 2: Heavenfall",
+                                            RU:"Massive Darkness 2: Heavenfall"
                                         },
                                         description:{
                                             IT:"4 tessere paradiso, Modalit&agrave; Campagna e boss",
-                                            EN:"4 heaven tiles, Campaign Mode, and bosses"
+                                            EN:"4 heaven tiles, Campaign Mode, and bosses",
+                                            RU:"4 райские плитки, режим кампании и боссы"
                                         },
                                         tags:[ "md2-heavenfall" ]
                                     },{
                                         code:"G",
                                         label:{
                                             IT:"Massive Darkness 2: Rainbow Crossing",
-                                            EN:"Massive Darkness 2: Rainbow Crossing"
+                                            EN:"Massive Darkness 2: Rainbow Crossing",
+                                            RU:"Massive Darkness 2: Rainbow Crossing"
                                         },
                                         description:{
                                             IT:"4 tessere arcobaleno",
-                                            EN:"4 rainbow tiles"
+                                            EN:"4 rainbow tiles",
+                                            RU:"4 радужные плитки"
                                         },
                                         tags:[ "md2-rainbowcrossing" ]
                                     },{
@@ -63,11 +71,13 @@ ModManager.modules.push(function(){
                                         code:"H",
                                         label:{
                                             IT:"Massive Darkness 2: Pack di Aggiornamento",
-                                            EN:"Massive Darkness 2: Upgrade Pack"
+                                            EN:"Massive Darkness 2: Upgrade Pack",
+                                            RU:"Massive Darkness 2: Upgrade Pack"
                                         },
                                         description:{
                                             IT:"Carte della Campagna Prologo e boss",
-                                            EN:"Prologue Campaign cards and boss"
+                                            EN:"Prologue Campaign cards and boss",
+                                            RU:"Карты кампании-пролога и босс"
                                         },
                                         tags:[ "campaign-upgradepack" ]
                                     },{
@@ -75,11 +85,13 @@ ModManager.modules.push(function(){
                                         code:"I",
                                         label:{
                                             IT:"Massive Darkness: Ciclope Scudiera e Ciclope Spaccarupi",
-                                            EN:"Massive Darkness: Spearmaiden Cyclops and Cliffbreaker Cyclops"
+                                            EN:"Massive Darkness: Spearmaiden Cyclops and Cliffbreaker Cyclops",
+                                            RU:"Massive Darkness: Spearmaiden Cyclops and Cliffbreaker Cyclops"
                                         },
                                         description:{
                                             IT:"Boss",
-                                            EN:"Boss"
+                                            EN:"Boss",
+                                            RU:"Босс"
                                         },
                                         tags:[ "campaign-upgradepack-cyclopsduo" ]
                                     },{
@@ -87,66 +99,78 @@ ModManager.modules.push(function(){
                                         code:"J",
                                         label:{
                                             IT:"Massive Darkness: Hellephant",
-                                            EN:"Massive Darkness: Hellephant"
+                                            EN:"Massive Darkness: Hellephant",
+                                            RU:"Massive Darkness: Hellephant"
                                         },
                                         description:{
                                             IT:"Boss",
-                                            EN:"Boss"
+                                            EN:"Boss",
+                                            RU:"Босс"
                                         },
                                         tags:[ "campaign-upgradepack-hellephant" ]
                                     },{
                                         code:"K",
                                         label:{
                                             IT:"Massive Darkness 2: Quattro Cavalieri",
-                                            EN:"Massive Darkness 2: Four Horsemen Pack"
+                                            EN:"Massive Darkness 2: Four Horsemen Pack",
+                                            RU:"Massive Darkness 2: Four Horsemen Pack"
                                         },
                                         description:{
                                             IT:"Boss",
-                                            EN:"Boss"
+                                            EN:"Boss",
+                                            RU:"Босс"
                                         },
                                         tags:[ "campaign-fourhorsemen" ]
                                     },{
                                         code:"L",
                                         label:{
                                             IT:"Massive Darkness 2: Darkbringer",
-                                            EN:"Massive Darkness 2: Darkbringer"
+                                            EN:"Massive Darkness 2: Darkbringer",
+                                            RU:"Massive Darkness 2: Darkbringer"
                                         },
                                         description:{
                                             IT:"Boss",
-                                            EN:"Boss"
+                                            EN:"Boss",
+                                            RU:"Босс"
                                         },
                                         tags:[ "campaign-darkbringer" ]
                                     },{
                                         code:"D",
                                         label:{
                                             IT:"Massive Darkness",
-                                            EN:"Massive Darkness"
+                                            EN:"Massive Darkness",
+                                            RU:"Massive Darkness"
                                         },
                                         description:{
                                             IT:"9 tessere dungeon",
-                                            EN:"9 dungeon tiles"
+                                            EN:"9 dungeon tiles",
+                                            RU:"9 плиток подземелья"
                                         },
                                         tags:[ "md1-base" ]
                                     },{
                                         code:"B",
                                         label:{
                                             IT:"Massive Darkness: Una Missione di Lava &amp; Cristalli",
-                                            EN:"Massive Darkness: A Quest of Crystal & Lava"
+                                            EN:"Massive Darkness: A Quest of Crystal & Lava",
+                                            RU:"Massive Darkness: A Quest of Crystal & Lava"
                                         },
                                         description:{
                                             IT:"6 tessere cristalli/lava",
-                                            EN:"6 crystal/lava tiles"
+                                            EN:"6 crystal/lava tiles",
+                                            RU:"6 кристальных/лавовых плиток"
                                         },
                                         tags:[ "md2-crystallava-cl" ]
                                     },{
                                         code:"b",
                                         label:{
                                             IT:"Massive Darkness: Una Missione di Lava &amp; Cristalli",
-                                            EN:"Massive Darkness: A Quest of Crystal & Lava"
+                                            EN:"Massive Darkness: A Quest of Crystal & Lava",
+                                            RU:"Massive Darkness: A Quest of Crystal & Lava"
                                         },
                                         description:{
                                             IT:"9 tessere dungeon che replicano quelle di Massive Darkness 1",
-                                            EN:"9 dungeon tiles replicating Massive Darkness 1 tiles"
+                                            EN:"9 dungeon tiles replicating Massive Darkness 1 tiles",
+                                            RU:"9 плиток подземелья, повторяющих плитки Massive Darkness 1"
                                         },
                                         tags:[ "md2-crystallava-up" ]
                                     },{
@@ -154,11 +178,13 @@ ModManager.modules.push(function(){
                                         code:"E",
                                         label:{
                                             IT:"Zombicide: Black Plague",
-                                            EN:"Zombicide: Black Plague"
+                                            EN:"Zombicide: Black Plague",
+                                            RU:"Zombicide: Black Plague"
                                         },
                                         description:{
                                             IT:"9 tessere esterne",
-                                            EN:"9 outdoor tiles"
+                                            EN:"9 outdoor tiles",
+                                            RU:"9 уличных плиток"
                                         },
                                         tags:[ "zc-blackplague" ]
                                     },{
@@ -166,11 +192,13 @@ ModManager.modules.push(function(){
                                         code:"F",
                                         label:{
                                             IT:"Zombicide: Green Horde",
-                                            EN:"Zombicide: Green Horde"
+                                            EN:"Zombicide: Green Horde",
+                                            RU:"Zombicide: Green Horde"
                                         },
                                         description:{
                                             IT:"9 tessere esterne/villaggio",
-                                            EN:"9 outdoor/village tiles"
+                                            EN:"9 outdoor/village tiles",
+                                            RU:"9 уличных/деревенских плиток"
                                         },
                                         tags:[ "zc-greenhorde" ]
                                     },{
@@ -178,11 +206,13 @@ ModManager.modules.push(function(){
                                         code:"f",
                                         label:{
                                             IT:"Zombicide: Friends and Foes",
-                                            EN:"Zombicide: Friends and Foes"
+                                            EN:"Zombicide: Friends and Foes",
+                                            RU:"Zombicide: Friends and Foes"
                                         },
                                         description:{
                                             IT:"5 tessere esterne/villaggio",
-                                            EN:"5 outdoor/village tiles"
+                                            EN:"5 outdoor/village tiles",
+                                            RU:"5 уличных/деревенских плиток"
                                         },
                                         tags:[ "zc-friendfoes" ]
                                     },{
@@ -190,11 +220,13 @@ ModManager.modules.push(function(){
                                         code:"e",
                                         label:{
                                             IT:"Zombicide: Wulfsburg",
-                                            EN:"Zombicide: Wulfsburg"
+                                            EN:"Zombicide: Wulfsburg",
+                                            RU:"Zombicide: Wulfsburg"
                                         },
                                         description:{
                                             IT:"2 tessere torre",
-                                            EN:"2 tower tiles"
+                                            EN:"2 tower tiles",
+                                            RU:"2 плитки башни"
                                         },
                                         tags:[ "zc-wulfsburg" ]
                                     },{
@@ -202,11 +234,13 @@ ModManager.modules.push(function(){
                                         code:"M",
                                         label:{
                                             IT:"Zombicide: White Death",
-                                            EN:"Zombicide: White Death"
+                                            EN:"Zombicide: White Death",
+                                            RU:"Zombicide: White Death"
                                         },
                                         description:{
                                             IT:"9 tessere innevate",
-                                            EN:"9 snow tiles"
+                                            EN:"9 snow tiles",
+                                            RU:"9 снежных плиток"
                                         },
                                         tags:[ "zc-whitedeath" ]
                                     },{
@@ -214,11 +248,13 @@ ModManager.modules.push(function(){
                                         code:"m",
                                         label:{
                                             IT:"Zombicide: Eternal Empire",
-                                            EN:"Zombicide: Eternal Empire"
+                                            EN:"Zombicide: Eternal Empire",
+                                            RU:"Zombicide: Eternal Empire"
                                         },
                                         description:{
                                             IT:"4 tessere innevate",
-                                            EN:"4 snow tiles"
+                                            EN:"4 snow tiles",
+                                            RU:"4 снежные плитки"
                                         },
                                         tags:[ "zc-eternalempire" ]
                                     }
@@ -229,7 +265,8 @@ ModManager.modules.push(function(){
                                 isMandatory:true,
                                 title:{
                                     IT:"Ponti",
-                                    EN:"Bridges"
+                                    EN:"Bridges",
+                                    RU:"Мосты"
                                 },
                                 entries:[
                                     {
@@ -237,22 +274,26 @@ ModManager.modules.push(function(){
                                         isDefault:true,
                                         label:{
                                             IT:"Due uscite",
-                                            EN:"Two Exits"
+                                            EN:"Two Exits",
+                                            RU:"Два выхода"
                                         },
                                         description:{
                                             IT:"Le tessere ponte possono essere attraversate orizzontalmente oppure verticalmente.",
                                             EN:"Bridge tiles can be crossed horizontally or vertically.",
+                                            RU:"Плитки мостов можно пересекать по горизонтали или по вертикали.",
                                         },
                                         tags:[ "bridge-default-twoexits" ]
                                     },{
                                         code:"u",
                                         label:{
                                             IT:"Quattro uscite",
-                                            EN:"Four exits"
+                                            EN:"Four exits",
+                                            RU:"Четыре выхода"
                                         },
                                         description:{
                                             IT:"Le tessere ponte possono essere attraversate da ogni direzione.",
                                             EN:"Bridge tiles can be crossed from any direction.",
+                                            RU:"Плитки мостов можно пересекать с любой стороны.",
                                         },
                                         tags:[ "bridge-default-fourexits" ]
                                     }
@@ -264,7 +305,8 @@ ModManager.modules.push(function(){
                                 isMandatory:true,
                                 title:{
                                     IT:"Generatore",
-                                    EN:"Generator"
+                                    EN:"Generator",
+                                    RU:"Генератор"
                                 },
                                 entries:[
                                     {
@@ -273,11 +315,13 @@ ModManager.modules.push(function(){
                                         isDefault:true,
                                         label:{
                                             IT:"Avventura one-shot",
-                                            EN:"One-shot quest"
+                                            EN:"One-shot quest",
+                                            RU:"Одиночное задание"
                                         },
                                         description:{
                                             IT:"Genera un'avventura one-shot.",
-                                            EN:"Generate a one-shot quest."
+                                            EN:"Generate a one-shot quest.",
+                                            RU:"Сгенерировать одиночное задание."
                                         },
                                         tags:[ "generator-oneshot" ]
                                     },{
@@ -285,11 +329,13 @@ ModManager.modules.push(function(){
                                         code:"v",
                                         label:{
                                             IT:"Campagna",
-                                            EN:"Campaign"
+                                            EN:"Campaign",
+                                            RU:"Кампания"
                                         },
                                         description:{
                                             IT:"Genera una serie di avventure da giocare in sequenza seguendo le regole di Massive Darkness 2: Heavenfall.",
-                                            EN:"Generate a series of adventures to be played in sequence following the rules of Massive Darkness 2: Heavenfall."
+                                            EN:"Generate a series of adventures to be played in sequence following the rules of Massive Darkness 2: Heavenfall.",
+                                            RU:"Сгенерировать серию приключений, в которые нужно играть по порядку, следуя правилам Massive Darkness 2: Heavenfall."
                                         },
                                         tags:[ "generator-campaign", "generator-campaign-standard", "campaign-full",  "boss" ]
                                     },{
@@ -297,11 +343,13 @@ ModManager.modules.push(function(){
                                         code:"w",
                                         label:{
                                             IT:"Mini-campagna",
-                                            EN:"Mini-campaign"
+                                            EN:"Mini-campaign",
+                                            RU:"Мини-кампания"
                                         },
                                         description:{
                                             IT:"Genera una breve serie di avventure da giocare in sequenza seguendo le regole delle mini-campagne.",
-                                            EN:"Generate a short series of adventures to be played in sequence following the mini-campaign rules."
+                                            EN:"Generate a short series of adventures to be played in sequence following the mini-campaign rules.",
+                                            RU:"Сгенерировать короткую серию приключений, в которые нужно играть по порядку, следуя правилам мини-кампании."
                                         },
                                         tags:[ "generator-campaign", "generator-campaign-standard", "campaign-mini",  "boss" ]
                                     },{
@@ -309,11 +357,13 @@ ModManager.modules.push(function(){
                                         code:"W",
                                         label:{
                                             IT:"Campagna 2-shot",
-                                            EN:"2-shot campaign"
+                                            EN:"2-shot campaign",
+                                            RU:"Кампания на 2 задания"
                                         },
                                         description:{
                                             IT:"Genera una brevissima campagna di 2 missioni da giocare in sequenza, seguendo le <a target=_blank href='https://boardgamegeek.com/thread/3460934/2-shot-campaign'>house rules</a> dell'utente <a target=_blank href='https://boardgamegeek.com/user/Rough_neck'>Roughneck CC</a> di BGG.",
-                                            EN:"Generates a very short campaign of 2 missions to be played in sequence, following the BGG user <a target=_blank href='https://boardgamegeek.com/user/Rough_neck'>Roughneck CC</a> <a target=_blank href='https://boardgamegeek.com/thread/3460934/2-shot-campaign'>house rules</a>."
+                                            EN:"Generates a very short campaign of 2 missions to be played in sequence, following the BGG user <a target=_blank href='https://boardgamegeek.com/user/Rough_neck'>Roughneck CC</a> <a target=_blank href='https://boardgamegeek.com/thread/3460934/2-shot-campaign'>house rules</a>.",
+                                            RU:"Сгенерировать очень короткую кампанию из 2 миссий, в которые нужно играть по порядку, следуя <a target=_blank href='https://boardgamegeek.com/thread/3460934/2-shot-campaign'>домашним правилам</a> пользователя BGG <a target=_blank href='https://boardgamegeek.com/user/Rough_neck'>Roughneck CC</a>."
                                         },
                                         tags:[ "generator-campaign", "campaign-2shots",  "boss" ]
                                     }
@@ -325,18 +375,21 @@ ModManager.modules.push(function(){
                                 isMandatory:true,
                                 title:{
                                     IT:"Grandezza delle mappa",
-                                    EN:"Map size"
+                                    EN:"Map size",
+                                    RU:"Размер карты"
                                 },
                                 entries:[
                                     {
                                         code:"0",
                                         label:{
                                             IT:"Piccola",
-                                            EN:"Small"
+                                            EN:"Small",
+                                            RU:"Маленькая"
                                         },
                                         description:{
                                             IT:"Se possibile, la mappa dell'avventura ha 1 tessera in meno rispetto a quelle suggerite.",
-                                            EN:"If possible, the quest map has 1 fewer tile than suggested."
+                                            EN:"If possible, the quest map has 1 fewer tile than suggested.",
+                                            RU:"Если возможно, карта задания содержит на 1 плитку меньше, чем рекомендовано."
                                         },
                                         tags:[ "maps-size-small" ]
                                     },{
@@ -344,22 +397,26 @@ ModManager.modules.push(function(){
                                         isDefault:true,
                                         label:{
                                             IT:"Normale",
-                                            EN:"Normal"
+                                            EN:"Normal",
+                                            RU:"Обычная"
                                         },
                                         description:{
                                             IT:"La mappa dell'avventura ha il numero suggerito di tessere.",
-                                            EN:"The adventure map has the suggested number of tiles."
+                                            EN:"The adventure map has the suggested number of tiles.",
+                                            RU:"Карта приключения содержит рекомендованное число плиток."
                                         },
                                         tags:[ "maps-size-normal" ]
                                     },{
                                         code:"2",
                                         label:{
                                             IT:"Grande",
-                                            EN:"Large"
+                                            EN:"Large",
+                                            RU:"Большая"
                                         },
                                         description:{
                                             IT:"Se possibile, la mappa dell'avventura ha 1 tessera in pi&ugrave; rispetto a quelle suggerite.",
-                                            EN:"If possible, the quest map has 1 more tile than suggested."
+                                            EN:"If possible, the quest map has 1 more tile than suggested.",
+                                            RU:"Если возможно, карта задания содержит на 1 плитку больше, чем рекомендовано."
                                         },
                                         tags:[ "maps-size-large" ]
                                     }
@@ -371,7 +428,8 @@ ModManager.modules.push(function(){
                                 isMandatory:true,
                                 title:{
                                     IT:"Stile della mappa",
-                                    EN:"Map style"
+                                    EN:"Map style",
+                                    RU:"Стиль карты"
                                 },
                                 entries:[
                                     {
@@ -379,33 +437,39 @@ ModManager.modules.push(function(){
                                         isDefault:true,
                                         label:{
                                             IT:"Uniforme",
-                                            EN:"Uniform"
+                                            EN:"Uniform",
+                                            RU:"Единый"
                                         },
                                         description:{
                                             IT:"Tutte le tessere della mappa mostrano la stessa ambientazione.",
                                             EN:"All tiles on the map show the same setting.",
+                                            RU:"Все плитки на карте показывают одно и то же окружение.",
                                         },
                                         tags:[ "maps-default-uniform" ]
                                     },{
                                         code:"y",
                                         label:{
                                             IT:"Divisa",
-                                            EN:"Split"
+                                            EN:"Split",
+                                            RU:"Разделённый"
                                         },
                                         description:{
                                             IT:"Le tessere sulla mappa possono mostrare 2 ambientazioni diverse. Migliora la variet&agrave; di struttura cercando di mantenere una buona estetica.",
                                             EN:"The map tiles can show 2 environments. Improves the variety of structure while trying to maintain good aesthetics.",
+                                            RU:"Плитки карты могут показывать 2 разных окружения. Это повышает разнообразие структуры, стараясь сохранить хорошую эстетику.",
                                         },
                                         tags:[ "maps-default-split" ]
                                     },{
                                         code:"z",
                                         label:{
                                             IT:"Interdimensionale",
-                                            EN:"Interdimensional"
+                                            EN:"Interdimensional",
+                                            RU:"Межпространственный"
                                         },
                                         description:{
                                             IT:"Le tessere sulla mappa possono mostrare ambientazioni diverse. Aumenta la variet&agrave; di struttura a scapito dell'estetica.",
                                             EN:"The map tiles can show different environments. Increase layout variety to the detriment of aesthetics.",
+                                            RU:"Плитки карты могут показывать разные окружения. Это увеличивает разнообразие раскладки в ущерб эстетике.",
                                         },
                                         tags:[ "maps-default-notuniform" ]
                                     }
@@ -414,7 +478,8 @@ ModManager.modules.push(function(){
                                 type:"includeExclude",
                                 title:{
                                     IT:"Extra",
-                                    EN:"Extras"
+                                    EN:"Extras",
+                                    RU:"Дополнительно"
                                 },
                                 entries:[
                                     {
@@ -422,11 +487,13 @@ ModManager.modules.push(function(){
                                         ifMenuOptionSelected:[ "generator-campaign", "generator-campaign-mini", "generator-campaign-2shots" ],
                                         label:{
                                             IT:"Nascondi gli spoiler",
-                                            EN:"Hide spoilers"
+                                            EN:"Hide spoilers",
+                                            RU:"Скрыть спойлеры"
                                         },
                                         description:{
                                             IT:"Le ricompense e le parti narrative vengono nascoste.",
                                             EN:"The rewards and the narrative parts are hidden.",
+                                            RU:"Награды и сюжетные части скрываются.",
                                         },
                                         tags:[ "campaign-hidespoilers" ]
                                     },{
@@ -434,11 +501,13 @@ ModManager.modules.push(function(){
                                         ifMenuOptionSelected:[ "generator-oneshot" ],
                                         label:{
                                             IT:"Sfide",
-                                            EN:"Challenges"
+                                            EN:"Challenges",
+                                            RU:"Испытания"
                                         },
                                         description:{
                                             IT:"Aggiunge all'avventura delle sfide extra, che potrai decidere se accettare o meno.",
                                             EN:"It adds extra challenges to the adventure, you can decide whether to accept or not.",
+                                            RU:"Добавляет в приключение дополнительные испытания, и вы сможете решить, принимать их или нет.",
                                         },
                                         tags:[ "challenges-default" ]
                                     },{
@@ -446,11 +515,13 @@ ModManager.modules.push(function(){
                                         ifMenuOptionSelected:[ "generator-oneshot" ],
                                         label:{
                                             IT:"Scontri con i Boss",
-                                            EN:"Boss fights"
+                                            EN:"Boss fights",
+                                            RU:"Сражения с боссами"
                                         },
                                         description:{
                                             IT:"Aggiunge al termine di alcune avventure uno scontro con il boss.",
                                             EN:"It adds a boss fight at the end of some quests.",
+                                            RU:"Добавляет в конце некоторых заданий сражение с боссом.",
                                         },
                                         tags:[ "boss" ]
                                     },{
@@ -458,11 +529,13 @@ ModManager.modules.push(function(){
                                         ifMenuOptionSelected:[ "generator-oneshot" ],
                                         label:{
                                             IT:"Modalit&agrave; Esplorazione",
-                                            EN:"Dungeon Crawling Mode"
+                                            EN:"Dungeon Crawling Mode",
+                                            RU:"Режим исследования подземелья"
                                         },
                                         description:{
                                             IT:"Il contenuto delle Camere &egrave; nascosto e viene mostrato quando vengono rivelate.",
                                             EN:"The content of the Chambers is hidden and is shown when they are revealed.",
+                                            RU:"Содержимое комнат скрыто и показывается, когда они раскрываются.",
                                         },
                                         tags:[ "gamemode-dungeoncrawling" ]
                                     },{
@@ -470,13 +543,15 @@ ModManager.modules.push(function(){
                                         label:{
                                             IT:"Escludi avventure non tradotte",
                                             EN:"Exclude untranslated quests",
-                                            FR:"Exclure les qu&#xEA;tes non traduites"
+                                            FR:"Exclure les qu&#xEA;tes non traduites",
+                                            RU:"Исключить непереведённые задания"
 
                                         },
                                         description:{
                                             IT:"Non vengono generate le avventure non disponibili nella lingua selezionata.",
                                             EN:"Adventures not available in the selected language are not generated.",
-                                            FR:"Les aventures non disponibles dans la langue s&#xE9;lectionn&#xE9;e ne sont pas g&#xE9;n&#xE9;r&#xE9;es."
+                                            FR:"Les aventures non disponibles dans la langue s&#xE9;lectionn&#xE9;e ne sont pas g&#xE9;n&#xE9;r&#xE9;es.",
+                                            RU:"Задания, недоступные на выбранном языке, не генерируются."
                                         },
                                         languageExcludeTags:{
                                             IT:[ "untranslated-it" ],
@@ -489,12 +564,14 @@ ModManager.modules.push(function(){
                                         isFlag:"zombicideRules",
                                         label:{
                                             IT:"Nascondi regole per Zombicide",
-                                            EN:"Hide Zombicide rules"
+                                            EN:"Hide Zombicide rules",
+                                            RU:"Скрыть правила Zombicide"
 
                                         },
                                         description:{
                                             IT:"Le regole comuni per giocare con le tessere di Zombicide non vengono aggiunte all'avventura.",
-                                            EN:"The common rules for playing with Zombicide tiles are not added to the adventure."
+                                            EN:"The common rules for playing with Zombicide tiles are not added to the adventure.",
+                                            RU:"Общие правила игры с плитками Zombicide не добавляются в приключение."
                                         },
                                         excludeTags:[ "quest-default-zombicide" ]
                                     },{
@@ -503,24 +580,29 @@ ModManager.modules.push(function(){
                                         isFlagButton:"zombicide",
                                         label:{
                                             IT:"Usa",
-                                            EN:"Use"
+                                            EN:"Use",
+                                            RU:"Использовать"
                                         },
                                         description:{
                                             IT:"Prova ad usare alcuni componenti della serie Zombicide.",
-                                            EN:"Try using some components from the Zombicide series."
+                                            EN:"Try using some components from the Zombicide series.",
+                                            RU:"Попробуйте использовать некоторые компоненты из серии Zombicide."
                                         },
                                         message:{
                                             IT:"<p>Alcuni capitoli della serie <i>Fantasy Zombicide</i> usano tessere dalla dimensione e struttura simile a quelle usate da Massive Darkness 2. Queste includono nuove ambientazioni, spazi aperti e nuovi ostacoli ma possono risultare troppo facili o difficili da affrontare con le regole di Massive Darkness 2.</p><p>Se disponi di questi materiali e ti senti <i>molto coraggioso</i>, Massive Randomness 2 pu&ograve; usarle per generare le avventure.</p><p>Vuoi provarci?</p>",
-                                            EN:"<p>Some chapters in the <i>Fantasy Zombicide</i> series use tiles with a similar size and structure to those used in Massive Darkness 2. These include new environments, open spaces, and new obstacles but may be too easy or difficult to deal with the Massive Darkness 2 rules.</p><p>If you have these materials and are feeling <i>very brave</i>, Massive Randomness 2 can use them to generate adventures.</p><p>Do you want to try it?</p>"
+                                            EN:"<p>Some chapters in the <i>Fantasy Zombicide</i> series use tiles with a similar size and structure to those used in Massive Darkness 2. These include new environments, open spaces, and new obstacles but may be too easy or difficult to deal with the Massive Darkness 2 rules.</p><p>If you have these materials and are feeling <i>very brave</i>, Massive Randomness 2 can use them to generate adventures.</p><p>Do you want to try it?</p>",
+                                            RU:"<p>Некоторые части серии <i>Fantasy Zombicide</i> используют плитки, похожие по размеру и структуре на те, что используются в Massive Darkness 2. Они добавляют новые окружения, открытые пространства и новые препятствия, но с правилами Massive Darkness 2 могут оказаться слишком лёгкими или слишком сложными.</p><p>Если у вас есть эти материалы и вы чувствуете себя <i>очень смелым</i>, Massive Randomness 2 может использовать их для генерации приключений.</p><p>Хотите попробовать?</p>"
                                         },
                                         buttons:{
                                             yes:{
                                                 IT:"Si",
-                                                EN:"Yes"
+                                                EN:"Yes",
+                                                RU:"Да"
                                             },
                                             no:{
                                                 IT:"No",
-                                                EN:"No"
+                                                EN:"No",
+                                                RU:"Нет"
                                             }
                                         }
                                     },{
@@ -528,11 +610,13 @@ ModManager.modules.push(function(){
                                         isInstallerButton:true,
                                         label:{
                                             IT:"Installa",
-                                            EN:"Install"
+                                            EN:"Install",
+                                            RU:"Установить"
                                         },
                                         description:{
                                             IT:"Permette di usare Massive Randomness 2 offline.",
-                                            EN:"Allows you to use Massive Randomness 2 offline."
+                                            EN:"Allows you to use Massive Randomness 2 offline.",
+                                            RU:"Позволяет использовать Massive Randomness 2 офлайн."
                                         }
                                     },{
                                         isHidden:true,
@@ -551,31 +635,38 @@ ModManager.modules.push(function(){
                         labels:{                            
                             toolName:{
                                 IT:"Massive Randomness 2",
-                                EN:"Massive Randomness 2"
+                                EN:"Massive Randomness 2",
+                                RU:"Massive Randomness 2"
                             },
                             toolDescription:{
                                 IT:"Un generatore casuale di avventure per Massive Darkness 2",
-                                EN:"A Massive Darkness 2 random quest generator"
+                                EN:"A Massive Darkness 2 random quest generator",
+                                RU:"Случайный генератор заданий для Massive Darkness 2"
                             },
                             footer:{
                                 IT:"Meglio su Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - Sorgenti su <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
-                                EN:"Best on Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - <a target=_blank href='{discordAt}'>Discord</a> - Sources at <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>"
+                                EN:"Best on Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - <a target=_blank href='{discordAt}'>Discord</a> - Sources at <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
+                                RU:"Лучше всего в Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - <a target=_blank href='{discordAt}'>Discord</a> - Исходники: <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>"
                             },
                             notice:{
                                 EN:"Massive Darkness, Zombicide, and all related properties are owned by CMON Global Limited",
-                                IT:"Massive Darkness, Zombicide e tutte le relative propriet&agrave; sono marchi registrati CMON Global Limited"
+                                IT:"Massive Darkness, Zombicide e tutte le relative propriet&agrave; sono marchi registrati CMON Global Limited",
+                                RU:"Massive Darkness, Zombicide и все связанные с ними права принадлежат CMON Global Limited"
                             },
                             wait:{
                                 IT:"Sto preparando l'avventura...",
-                                EN:"Please wait..."
+                                EN:"Please wait...",
+                                RU:"Подготавливаю задание..."
                             },
                             tooltipNewQuest:{
                                 IT:"Genera una nuova avventura",
-                                EN:"Generate a new quest"
+                                EN:"Generate a new quest",
+                                RU:"Сгенерировать новое задание"
                             },
                             tooltipSettings:{
                                 IT:"Impostazioni",
-                                EN:"Settings"
+                                EN:"Settings",
+                                RU:"Настройки"
                             },
                             languageUnavailable:{
                                 IT:"Questa avventura non &egrave; disponibile in italiano. Puoi escludere le avventure non tradotte dalle opzioni.",
