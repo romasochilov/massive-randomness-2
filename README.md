@@ -79,6 +79,41 @@ Massive Randomness 2 was missing bosses since they do not scale with the player'
 
 But they are the _character build gates_ of Massive Darkness 2: huge miniatures to be fight in a tight space ready to give one last _adrenaline burst_ to the players. So I've kicked some data on a spreadsheet and attempted to adapt them to almost all the generated quests. I hope it will do the job!
 
+### Run locally
+
+The project is a static site with no build step. To preview your changes locally:
+
+```sh
+python3 -m http.server 4173
+```
+
+Then open:
+
+* `http://127.0.0.1:4173/index.html` — the generator UI
+* `http://127.0.0.1:4173/tools/tests.html` — the in-browser data checker (quest coverage, label integrity, malformed entities)
+
+The Service Worker registration fails when serving over plain `python3 -m http.server` (the `.php` worker script returns the wrong MIME type). That warning is safe to ignore in local development; the generator itself still works.
+
+### Run automated smoke tests
+
+A Playwright smoke test under `tools/smoke.js` generates many quests against the local server and reports any rendering errors or empty mission cards. Useful when validating new translations or label engine changes.
+
+```sh
+# one-time setup
+npm install
+npx playwright install chromium
+
+# in one terminal
+npm run serve                # equivalent to python3 -m http.server 4173
+
+# in another terminal
+npm run smoke                # defaults to RU
+npm run smoke:en             # English
+node tools/smoke.js IT 50    # custom language and count
+```
+
+The script clicks the "new quest" button many times, captures rendered text per generation, and exits non-zero if any quest renders blank or any unhandled JS error fires.
+
 ### Technical notes
 
  * If your browser supports PWA and Service Worker, you should be able to install MR2 on your device from the browser options menu and use it offline. Offline support for web applications has been a bit esoteric in the past and still is, so it may not work for you. If you intend to self-host MR2 and do not want this functionality, please remove/comment out the inclusion of the `js/installer.js` script in `index.html`.
