@@ -8,7 +8,7 @@ ModManager.modules.push(function(){
             provides:[ "md2-rainbowcrossing" ],
             label:{
                 EN:"MD: Rainbow Crossing box tiles",
-                RU:"Плитки коробки MD2: Rainbow Crossing"
+                RU:"Плитки из коробки MD: Rainbow Crossing"
             },
             content:[
                 {

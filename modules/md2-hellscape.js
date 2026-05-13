@@ -59,60 +59,46 @@ ModManager.modules.push(function(){
                             RU:"<span class='symbol dice red'>К</span>"
                         },
                         sword:{
-                            EN:"<span class='symbol icon sword'></span>",
-                            RU:"<span class='symbol icon sword'></span>"
+                            EN:"<span class='symbol icon sword'></span>"
                         },
                         shield:{
-                            EN:"<span class='symbol icon shield'></span>",
-                            RU:"<span class='symbol icon shield'></span>"
+                            EN:"<span class='symbol icon shield'></span>"
                         },
                         scratch:{
-                            EN:"<span class='symbol icon scratch'></span>",
-                            RU:"<span class='symbol icon scratch'></span>"
+                            EN:"<span class='symbol icon scratch'></span>"
                         },
                         fang:{
-                            EN:"<span class='symbol icon fang'></span>",
-                            RU:"<span class='symbol icon fang'></span>"
+                            EN:"<span class='symbol icon fang'></span>"
                         },
                         mana:{
-                            EN:"<span class='symbol icon mana'></span>",
-                            RU:"<span class='symbol icon mana'></span>"
+                            EN:"<span class='symbol icon mana'></span>"
                         },
                         face:{
-                            EN:"<span class='symbol icon face'></span>",
-                            RU:"<span class='symbol icon face'></span>"
+                            EN:"<span class='symbol icon face'></span>"
                         },
                         rangeRanged:{
-                            EN:"<span class='symbol icon rangeRanged'></span>",
-                            RU:"<span class='symbol icon rangeRanged'></span>"
+                            EN:"<span class='symbol icon rangeRanged'></span>"
                         },
                         rangeMelee:{
-                            EN:"<span class='symbol icon rangeMelee'></span>",
-                            RU:"<span class='symbol icon rangeMelee'></span>"
+                            EN:"<span class='symbol icon rangeMelee'></span>"
                         },
                         rangeMagic:{
-                            EN:"<span class='symbol icon rangeMagic'></span>",
-                            RU:"<span class='symbol icon rangeMagic'></span>"
+                            EN:"<span class='symbol icon rangeMagic'></span>"
                         },
                         corruptionToken:{
-                            EN:"<span class='symbol token corruption'></span>",
-                            RU:"<span class='symbol token corruption'></span>"
+                            EN:"<span class='symbol token corruption'></span>"
                         },
                         timeToken:{
-                            EN:"<span class='symbol token time'></span>",
-                            RU:"<span class='symbol token time'></span>"
+                            EN:"<span class='symbol token time'></span>"
                         },
                         mobToken:{
-                            EN:"<span class='symbol token mob'></span>",
-                            RU:"<span class='symbol token mob'></span>"
+                            EN:"<span class='symbol token mob'></span>"
                         },
                         frostToken:{
-                            EN:"<span class='symbol token frost'></span>",
-                            RU:"<span class='symbol token frost'></span>"
+                            EN:"<span class='symbol token frost'></span>"
                         },
                         fireToken:{
-                            EN:"<span class='symbol token fire'></span>",
-                            RU:"<span class='symbol token fire'></span>"
+                            EN:"<span class='symbol token fire'></span>"
                         }
                     }
                 },{
