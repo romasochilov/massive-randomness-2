@@ -7,8 +7,8 @@ Interface=(function() {
         DEBUG_HIDDENTEXT = false,
         VERSION = "0.42b",
         SOURCES_AT = {
-            short:"github.com/kesiev/massive-randomness-2",
-            full:"https://github.com/kesiev/massive-randomness-2"
+            short:"github.com/romasochilov/massive-randomness-2",
+            full:"https://github.com/romasochilov/massive-randomness-2"
         },
         DISCORD_AT = "https://discord.gg/TeAWvnuGku",
         LOCALSTORAGE_PREFIX="MARA2_",

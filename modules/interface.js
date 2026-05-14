@@ -658,9 +658,9 @@ ModManager.modules.push(function(){
                                 RU:"Случайный генератор заданий для Massive Darkness 2"
                             },
                             footer:{
-                                IT:"Meglio su Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - Sorgenti su <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
-                                EN:"Best on Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - <a target=_blank href='{discordAt}'>Discord</a> - Sources at <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
-                                RU:"Лучше всего в Firefox/Chrome - {toolName} - {toolVersion} - &copy; 2024 by KesieV - <a target=_blank href='{discordAt}'>Discord</a> - Исходники: <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>"
+                                IT:"Meglio su Firefox/Chrome - {toolName} - {toolVersion} - Sorgenti su <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
+                                EN:"Best on Firefox/Chrome - {toolName} - {toolVersion} - Sources at <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>",
+                                RU:"Лучше всего в Firefox/Chrome - {toolName} - {toolVersion} - Исходники: <a target=_blank href='{sourcesAtFull}'>{sourcesAtShort}</a>"
                             },
                             notice:{
                                 EN:"Massive Darkness, Zombicide, and all related properties are owned by CMON Global Limited",
