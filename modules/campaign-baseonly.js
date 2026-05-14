@@ -69,7 +69,7 @@ ModManager.modules.push(function(){
                     type:"campaignModels",
                     data:[
                         {
-                            type:"baseonly",
+                            type:"mini",
                             label:{
                                 EN:"4-quests linear campaign using only the base box",
                                 RU:"Линейная кампания из 4 заданий, использующая только базовую коробку"
@@ -342,6 +342,49 @@ ModManager.modules.push(function(){
                                             ]
                                         ]
                                     }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    type:"globalLabels",
+                    data:{
+                        campaignPreparation:{
+                            EN:"This is a base-box-only mini-campaign. It uses only content from the MD2 Hellscape base box. Prepare a mini-campaign following the standard mini-campaign rules.",
+                            RU:"Это мини-кампания только из базовой коробки. В ней используется только содержимое базовой коробки MD2 Hellscape. Подготовьте мини-кампанию по стандартным правилам мини-кампании."
+                        }
+                    }
+                },
+                {
+                    type:"campaignRewardModels",
+                    data:[
+                        {
+                            label:{
+                                EN:"Accept a medium challenge and gain an item.",
+                                RU:"Примите среднее испытание и получите предмет."
+                            },
+                            words:[
+                                [ "trial", "gauge", "weigh" ],
+                                [ "test", "trial", "match" ]
+                            ],
+                            models:[
+                                {
+                                    at:[
+                                        { act:0, map:0 },
+                                        { act:0, map:1 },
+                                        { act:1, map:0 }
+                                    ],
+                                    flags:[
+                                        { challenges:"yes", challengeIntensity:1, challengeRewardTags:[ [ "itemQuality2" ] ] }
+                                    ]
+                                },{
+                                    at:[
+                                        { act:1, map:1 }
+                                    ],
+                                    flags:[
+                                        { challenges:"yes", challengeIntensity:2, challengeRewardTags:[ [ "glory" ] ] }
+                                    ]
                                 }
                             ]
                         }
