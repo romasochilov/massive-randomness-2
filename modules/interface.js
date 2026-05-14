@@ -682,6 +682,11 @@ ModManager.modules.push(function(){
                                 EN:"Settings",
                                 RU:"Настройки"
                             },
+                            tooltipPrint:{
+                                IT:"Salva in PDF / Stampa",
+                                EN:"Save as PDF / Print",
+                                RU:"Сохранить в PDF / Распечатать"
+                            },
                             languageUnavailable:{
                                 IT:"Questa avventura non &egrave; disponibile in italiano. Puoi escludere le avventure non tradotte dalle opzioni.",
                                 EN:"This adventure is not available in English. You can exclude untranslated adventures from the options.",
