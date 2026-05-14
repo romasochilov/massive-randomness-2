@@ -61,6 +61,19 @@ async function smokeMenu(page) {
     return { ok, sections, generatorEntries };
 }
 
+async function smokePrint(page) {
+    await page.evaluate(() => { window.__printSnapshot = null; window.print = function() { window.__printSnapshot = {
+        bodyClass: document.body.querySelector('.body') ? document.body.querySelector('.body').className : '',
+        printPageCount: document.querySelectorAll('.printAllPages .printPage').length
+    }; }; });
+    const btnPresent = await page.evaluate(() => !!document.querySelector('.button.printButton'));
+    if (!btnPresent) return { ok: false, reason: 'no print button' };
+    await page.evaluate(() => document.querySelector('.button.printButton').click());
+    await page.waitForTimeout(600);
+    const snap = await page.evaluate(() => window.__printSnapshot);
+    return { ok: !!snap, snap };
+}
+
 async function smokeQuests(page) {
     // Close settings, go to one-shot, click "new quest" N times, ensure all renders are non-empty.
     await page.evaluate(() => {
@@ -106,7 +119,12 @@ async function smokeQuests(page) {
     console.log(`[menu] Generator section present: ${menu.ok ? 'yes' : 'NO'}; entries: ${menu.generatorEntries}; sections seen: ${menu.sections.join(', ')}`);
     if (!menu.ok) failed = true;
 
-    // 2. Quest generation check
+    // 2. Print button check (one-shot)
+    const printOneShot = await smokePrint(page);
+    console.log(`[print] one-shot: ${printOneShot.ok ? 'window.print called' : 'FAILED ('+(printOneShot.reason||'')+')'}`);
+    if (!printOneShot.ok) failed = true;
+
+    // 3. Quest generation check
     const empties = await smokeQuests(page);
     console.log(`[quests] Generated ${N} quests in ${LANG}. Empty: ${empties.length}`);
     if (empties.length) {

@@ -333,7 +333,7 @@ CampaignGenerator=(function() {
                                     sideQuest = pickRandomElementValue(questCampaign.sideQuests),
                                     sideQuestTags = pickRandomElementValue(sideQuest.tags),
                                     sideQuestModel = pickFromBag(sideQuestsBag,sideQuestTags),
-                                    sideQuestReward = sideQuest.rewardTags || sideQuestModel.rewardTags || questFlags.sideQuestRewardTags;
+                                    sideQuestReward = sideQuest.rewardTags || (sideQuestModel && sideQuestModel.rewardTags) || questFlags.sideQuestRewardTags;
 
                                 if (sideQuestModel && sideQuestReward) {
 

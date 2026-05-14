@@ -49,6 +49,7 @@ Interface=(function() {
         logoTitleNode,
         logoSubtitleNode,
         settingsButtonNode,
+        printButtonNode,
         newQuestNode,
         languageSelectorCombo,
         bodyNode;
@@ -575,6 +576,8 @@ Interface=(function() {
         footerNode.innerHTML = footerText+"<br><span class='notice'>"+getLabel(language,INTERFACE.labels.notice)+"</span>";
         newQuestNode.title = getLabel(language,INTERFACE.labels.tooltipNewQuest);
         settingsButtonNode.title = getLabel(language,INTERFACE.labels.tooltipSettings);
+        if (printButtonNode && INTERFACE.labels.tooltipPrint)
+            printButtonNode.title = getLabel(language,INTERFACE.labels.tooltipPrint);
         drawSettings();
         showSettings();
         renderLastQuest();
@@ -609,6 +612,7 @@ Interface=(function() {
             logoTitleNode = createNode(logoNode,"div","title"),
             logoSubtitleNode = createNode(logoNode,"div","subtitle"),
 
+            printButtonNode = createNode(rightToolsNode,"div","button printButton");
             newQuestNode = createNode(rightToolsNode,"div","button newQuest");
             languageSelectorCombo = createNode(languageSelector,"select");
 
@@ -629,6 +633,32 @@ Interface=(function() {
 
             settingsButtonNode.onclick=()=>{
                 setSettingsMode(!settingsMode);
+            }
+
+            printButtonNode.onclick=()=>{
+                if (lastResult && lastResult.campaign && lastResult.campaign.pages && lastResult.campaign.pages.length > 1) {
+                    let originalPage = lastResult.campaign.page;
+                    bodyNode.innerHTML = "";
+                    bodyNode.classList.add("printAllPages");
+                    for (let p = 0; p < lastResult.campaign.pages.length; p++) {
+                        lastResult.campaign.page = p;
+                        let pageContainer = createNode(bodyNode,"div","printPage");
+                        QuestRenderer.render(lastResources,lastResult,language,pageContainer,{
+                            debugRender:DEBUG_RENDER,
+                            debugHiddenText:DEBUG_HIDDENTEXT,
+                            questUnavailableLabel:INTERFACE.labels.questUnavailable,
+                            gotoPageCallback:()=>{}
+                        });
+                    }
+                    setTimeout(()=>{
+                        window.print();
+                        lastResult.campaign.page = originalPage;
+                        bodyNode.classList.remove("printAllPages");
+                        renderLastQuest();
+                    },100);
+                } else {
+                    window.print();
+                }
             }
 
             if (loadId())
