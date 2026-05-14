@@ -300,7 +300,7 @@ ModManager.modules.push(function(){
                                 ]
                             },{
                                 type:"includeSelected",
-                                ifMenuOptionSelected:[ "md2-heavenfall" ],
+                                ifMenuOptionSelected:[ "md2-hellscape" ],
                                 isSingleOption:true,
                                 isMandatory:true,
                                 title:{
@@ -327,6 +327,7 @@ ModManager.modules.push(function(){
                                     },{
                                         idOption:"generator-campaign",
                                         code:"v",
+                                        ifMenuOptionSelected:[ "md2-heavenfall" ],
                                         label:{
                                             IT:"Campagna",
                                             EN:"Campaign",
@@ -341,6 +342,7 @@ ModManager.modules.push(function(){
                                     },{
                                         idOption:"generator-campaign-mini",
                                         code:"w",
+                                        ifMenuOptionSelected:[ "md2-heavenfall" ],
                                         label:{
                                             IT:"Mini-campagna",
                                             EN:"Mini-campaign",
@@ -355,6 +357,7 @@ ModManager.modules.push(function(){
                                     },{
                                         idOption:"generator-campaign-2shots",
                                         code:"W",
+                                        ifMenuOptionSelected:[ "md2-heavenfall" ],
                                         label:{
                                             IT:"Campagna 2-shot",
                                             EN:"2-shot campaign",
