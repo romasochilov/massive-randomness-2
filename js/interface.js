@@ -7,8 +7,8 @@ Interface=(function() {
         DEBUG_HIDDENTEXT = false,
         VERSION = "0.42b",
         SOURCES_AT = {
-            short:"github.com/kesiev/massive-randomness-2",
-            full:"https://github.com/kesiev/massive-randomness-2"
+            short:"github.com/romasochilov/massive-randomness-2",
+            full:"https://github.com/romasochilov/massive-randomness-2"
         },
         DISCORD_AT = "https://discord.gg/TeAWvnuGku",
         LOCALSTORAGE_PREFIX="MARA2_",
@@ -637,25 +637,43 @@ Interface=(function() {
 
             printButtonNode.onclick=()=>{
                 if (lastResult && lastResult.campaign && lastResult.campaign.pages && lastResult.campaign.pages.length > 1) {
-                    let originalPage = lastResult.campaign.page;
-                    bodyNode.innerHTML = "";
-                    bodyNode.classList.add("printAllPages");
-                    for (let p = 0; p < lastResult.campaign.pages.length; p++) {
-                        lastResult.campaign.page = p;
-                        let pageContainer = createNode(bodyNode,"div","printPage");
-                        QuestRenderer.render(lastResources,lastResult,language,pageContainer,{
+                    if (generating) return;
+                    let
+                        originalPage = lastResult.campaign.page,
+                        snapshots = [],
+                        totalPages = lastResult.campaign.pages.length,
+                        originalRenderLastQuest = renderLastQuest;
+                    bodyNode.innerHTML = "<div class='generating'>"+getLabel(language,INTERFACE.labels.wait)+"</div>";
+                    renderLastQuest = function() {
+                        let tmp = document.createElement("div");
+                        QuestRenderer.render(lastResources,lastResult,language,tmp,{
                             debugRender:DEBUG_RENDER,
                             debugHiddenText:DEBUG_HIDDENTEXT,
                             questUnavailableLabel:INTERFACE.labels.questUnavailable,
                             gotoPageCallback:()=>{}
                         });
-                    }
-                    setTimeout(()=>{
-                        window.print();
-                        lastResult.campaign.page = originalPage;
-                        bodyNode.classList.remove("printAllPages");
-                        renderLastQuest();
-                    },100);
+                        snapshots.push(tmp.innerHTML);
+                        if (snapshots.length < totalPages) {
+                            lastResult.campaign.page = snapshots.length;
+                            generate();
+                        } else {
+                            renderLastQuest = originalRenderLastQuest;
+                            bodyNode.innerHTML = "";
+                            bodyNode.classList.add("printAllPages");
+                            snapshots.forEach(html=>{
+                                let pageContainer = createNode(bodyNode,"div","printPage");
+                                pageContainer.innerHTML = html;
+                            });
+                            setTimeout(()=>{
+                                window.print();
+                                lastResult.campaign.page = originalPage;
+                                bodyNode.classList.remove("printAllPages");
+                                generate();
+                            },100);
+                        }
+                    };
+                    lastResult.campaign.page = 0;
+                    generate();
                 } else {
                     window.print();
                 }

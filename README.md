@@ -4,7 +4,7 @@
 
 ---
 
-<div align="center"><a href="https://www.kesiev.com/massive-randomness-2/">Generate a quest</a> | <a href="https://boardgamegeek.com/thread/3242331/massive-randomness-2-very-beta-one-shot-quest-rand">BGG discussion thread</a> | <a href="https://discord.gg/TeAWvnuGku">Discord</a></div>
+<div align="center"><a href="https://romasochilov.github.io/massive-randomness-2/">Generate a quest</a> | <a href="https://boardgamegeek.com/thread/3242331/massive-randomness-2-very-beta-one-shot-quest-rand">BGG discussion thread</a></div>
 
 ---
 
@@ -14,7 +14,7 @@ Great Heroes. You managed to survive Hell and Heaven, you fought hordes of Angel
 
 ## The project
 
-**Massive Randomness 2** is a [Massive Darkness 2](https://boardgamegeek.com/boardgame/315610/massive-darkness-2-hellscape) board game quest and campaign random generator. It will select a scenario model from its database, randomize part of the narrative for added fun, and create a matching randomly generated dungeon for you. It will also generate a set of random **challenges** you may want to accept to make your dungeon crawling experience a little more fun (and deadly). Just go to [the project page](https://www.kesiev.com/massive-randomness-2/) to give it a shot. Hit the black die button on the top right to generate a new quest or the hamburger menu button on the top left to show a few settings.
+**Massive Randomness 2** is a [Massive Darkness 2](https://boardgamegeek.com/boardgame/315610/massive-darkness-2-hellscape) board game quest and campaign random generator. It will select a scenario model from its database, randomize part of the narrative for added fun, and create a matching randomly generated dungeon for you. It will also generate a set of random **challenges** you may want to accept to make your dungeon crawling experience a little more fun (and deadly). Just go to [the project page](https://romasochilov.github.io/massive-randomness-2/) to give it a shot. Hit the black die button on the top right to generate a new quest or the hamburger menu button on the top left to show a few settings.
 
 <div align="center" style="margin:60px 0">
     <p><img src="markdown/print.png"></p>
