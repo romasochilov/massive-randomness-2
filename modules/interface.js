@@ -300,7 +300,6 @@ ModManager.modules.push(function(){
                                 ]
                             },{
                                 type:"includeSelected",
-                                ifMenuOptionSelected:[ "md2-hellscape" ],
                                 isSingleOption:true,
                                 isMandatory:true,
                                 title:{
