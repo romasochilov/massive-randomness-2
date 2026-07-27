@@ -5,10 +5,11 @@
 
 ## Problem
 
-The generator has no difficulty control. Players who find quests too easy or too
-punishing can only self-adjust at the table. Add a Difficulty selector — Easy /
-Normal / Hard / Nightmare — that makes generated quests genuinely easier or
-harder.
+The generator has no difficulty control. Players who find quests too easy can
+only self-adjust at the table. Add a Difficulty selector — Normal / Hard /
+Nightmare — that makes generated quests genuinely harder. Normal (the current
+behavior) is the easiest mode; there is no easier-than-normal option (user
+decision 2026-07-27).
 
 ## Decisions already made
 
@@ -28,20 +29,19 @@ Generator section so it is visible for both one-shot and campaign generators.
 
 | Option | `code` | `tags` | Notes |
 |---|---|---|---|
-| Easy | `3` | `difficulty-easy` | |
-| Normal | — | — | `isDefault`, no code/tags |
-| Hard | `4` | `difficulty-hard` | |
-| Nightmare | `5` | `difficulty-nightmare`, `challenges-default`, `boss` | description states Challenges + Boss fights are included |
+| Normal | — | — | `isDefault`, no code/tags, the easiest mode |
+| Hard | `3` | `difficulty-hard` | |
+| Nightmare | `4` | `difficulty-nightmare`, `challenges-default`, `boss` | description states Challenges + Boss fights are included |
 
-Codes `3`, `4`, `5` are unused by any existing entry (verified against the full
+Codes `3` and `4` are unused by any existing entry (verified against the full
 settings tree; hash matching is a global `indexOf`, so uniqueness is required).
 Hash restore with no difficulty code falls back to defaults via the existing
 `isSingleOption` empty-selection path → Normal.
 
 ## Rule content — new `modules/difficulty.js`
 
-Three modules (`difficulty-easy`, `difficulty-hard`, `difficulty-nightmare`).
-Each provides its own tag and contributes three content blocks:
+Two modules (`difficulty-hard`, `difficulty-nightmare`). Each provides its own
+tag and contributes three content blocks:
 
 1. `type:"specialRules"` — one named rule set (e.g. `difficultyNightmare`)
    containing display rules shaped like `dungeonCrawlingMode`'s:
@@ -59,9 +59,6 @@ Each provides its own tag and contributes three content blocks:
 Wording mirrors the existing challenge vocabulary (Abyssal Strength, Abyssal
 Armor) and uses the existing `{symbol.blueDie}` token.
 
-- **Easy Mode**
-  - When a Mob spawns, remove 1 Minion from it.
-  - Minions and Leaders have −1 Health (minimum 1).
 - **Hard Mode**
   - Add 1 Minion to each spawned Mob.
   - Minions and Leaders have +1 Health.
@@ -98,10 +95,10 @@ pick the rules up automatically because they run through the same generator.
 - `npm run smoke` (RU and EN) must pass: N generations, no blank cards, no page
   errors.
 - Extend `tools/smoke.js`:
-  - assert the Difficulty section renders in settings with 4 entries;
-  - run one generation with a Nightmare hash (difficulty code `5` + seed) and
+  - assert the Difficulty section renders in settings with 3 entries;
+  - run one generation with a Nightmare hash (difficulty code `4` + seed) and
     assert the mission card is non-blank and contains the Nightmare rule name.
-- Manual: `npm run serve`, eyeball Easy/Hard/Nightmare sheets and the print
+- Manual: `npm run serve`, eyeball Hard/Nightmare sheets and the print
   view; verify a campaign page shows the difficulty block.
 
 ## Out of scope

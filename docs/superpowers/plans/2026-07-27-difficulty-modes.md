@@ -2,17 +2,18 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add an Easy / Normal / Hard / Nightmare difficulty selector that prints table rules on every generated quest sheet; Nightmare also auto-enables Challenges and Boss fights.
+**Goal:** Add a Normal / Hard / Nightmare difficulty selector (Normal = current behavior, the easiest mode) that prints table rules on every generated quest sheet; Nightmare also auto-enables Challenges and Boss fights.
 
-**Architecture:** Tag-driven, like every other setting. A new UI section in `modules/interface.js` maps options to tags `difficulty-easy|hard|nightmare`. A new `modules/difficulty.js` provides one special-rules block per mode plus two array content types (`difficultyRules`, `campaignProtectedNeeds`). A 7-line hook in `js/questgenerator.js` appends the rules to every quest. Spec: `docs/superpowers/specs/2026-07-27-difficulty-modes-design.md`.
+**Architecture:** Tag-driven, like every other setting. A new UI section in `modules/interface.js` maps options to tags `difficulty-hard|nightmare`. A new `modules/difficulty.js` provides one special-rules block per mode plus two array content types (`difficultyRules`, `campaignProtectedNeeds`). A 7-line hook in `js/questgenerator.js` appends the rules to every quest. Spec: `docs/superpowers/specs/2026-07-27-difficulty-modes-design.md`.
 
 **Tech Stack:** Vanilla JS (no build step), Node for unit test, Playwright smoke test (`tools/smoke.js`).
 
 ## Global Constraints
 
-- Hash codes: Easy=`3`, Hard=`4`, Nightmare=`5`. Normal has NO code and NO tags (backward-compatible no-op default).
-- Tags: `difficulty-easy`, `difficulty-hard`, `difficulty-nightmare`. Nightmare entry additionally carries `challenges-default` and `boss`.
-- Special-rule set names: `difficultyEasy`, `difficultyHard`, `difficultyNightmare`. Rule blocks use `priority:30`, `type:"rule"`, NO `displayOnly` class.
+- There is NO Easy mode (user decision 2026-07-27): Normal is the easiest. The selector is Normal / Hard / Nightmare.
+- Hash codes: Hard=`3`, Nightmare=`4`. Normal has NO code and NO tags (backward-compatible no-op default).
+- Tags: `difficulty-hard`, `difficulty-nightmare`. Nightmare entry additionally carries `challenges-default` and `boss`.
+- Special-rule set names: `difficultyHard`, `difficultyNightmare`. Rule blocks use `priority:30`, `type:"rule"`, NO `displayOnly` class.
 - Languages: IT/EN/RU everywhere. IT uses HTML entities for accents (`&agrave;`, `&ugrave;`) matching repo style; RU uses raw UTF-8 Cyrillic.
 - Terminology (from existing texts, do not improvise): Mob = IT `Orda` / RU `орда`; Minions = `Gregari` / `прислужники`; Leaders = `Comandanti` / `лидеры`; Enemies = `Nemici` / `враги`; Roaming Monster = `Mostro Errante` / `блуждающий монстр`; Health = `Salute` / `здоровье`; Defense = `Difesa` / `Защита`; Level = `Livello` / `уровень`.
 - Preserve `{symbol.blueDie}` placeholder and `<span class='phase'>` markup exactly as in `modules/challenges-default.js`.
@@ -32,7 +33,7 @@
 
 **Interfaces:**
 - Consumes: `ModManager.load({needs})` bundle semantics — array content concatenates, object content merges per key; `QuestGenerator.generate(resources, result, flags)`.
-- Produces: bundle keys `difficultyRules` (array of rule-set names) and `campaignProtectedNeeds` (array of tags) plus `specialRules.difficultyEasy|difficultyHard|difficultyNightmare`; QuestGenerator pushes those rules onto `quest.rules`. Task 2/3 rely on tags `difficulty-easy|hard|nightmare` and rule names `Easy Mode` / `Hard Mode` / `Nightmare Mode` (RU: `Лёгкий режим` / `Сложный режим` / `Кошмарный режим`).
+- Produces: bundle keys `difficultyRules` (array of rule-set names) and `campaignProtectedNeeds` (array of tags) plus `specialRules.difficultyHard|difficultyNightmare`; QuestGenerator pushes those rules onto `quest.rules`. Task 2/3 rely on tags `difficulty-hard|nightmare` and rule names `Hard Mode` / `Nightmare Mode` (RU: `Сложный режим` / `Кошмарный режим`).
 
 - [ ] **Step 1: Write the failing unit test**
 
@@ -50,7 +51,6 @@ require('../js/questgenerator.js');
 // --- Module wiring
 
 [
-    ["difficulty-easy","difficultyEasy"],
     ["difficulty-hard","difficultyHard"],
     ["difficulty-nightmare","difficultyNightmare"]
 ].forEach(([tag,ruleSet])=>{
@@ -109,47 +109,6 @@ Expected: FAIL — `Cannot find module '../modules/difficulty.js'`
 ModManager.modules.push(function(){
 
     return [
-        {
-
-            id:"difficulty-easy",
-            needs:[ ],
-            provides:[ "difficulty-easy" ],
-            label:{
-                EN:"Easy difficulty - weaker enemy Mobs",
-                RU:"Лёгкая сложность - более слабые орды врагов"
-            },
-            content:[
-                {
-                    type:"specialRules",
-                    data:{
-                        difficultyEasy:[
-                            {
-                                priority:30,
-                                type:"rule",
-                                name:{
-                                    IT:"Modalit&agrave; Facile",
-                                    EN:"Easy Mode",
-                                    RU:"Лёгкий режим"
-                                },
-                                explanation:{
-                                    IT:"Quando un'Orda viene generata, rimuovere 1 Gregario da essa. I Gregari ed i Comandanti hanno -1 Salute (minimo 1).",
-                                    EN:"When a Mob spawns, remove 1 Minion from it. Minions and Leaders have -1 Health (minimum 1).",
-                                    RU:"Когда создаётся орда, уберите из неё 1 прислужника. Прислужники и лидеры имеют -1 здоровья (минимум 1)."
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    type:"difficultyRules",
-                    data:[ "difficultyEasy" ]
-                },
-                {
-                    type:"campaignProtectedNeeds",
-                    data:[ "difficulty-easy" ]
-                }
-            ]
-        },
         {
 
             id:"difficulty-hard",
@@ -278,7 +237,7 @@ Expected: `difficulty-test: all assertions passed`, exit 0
 ```bash
 cd ~/GitHub/massive-randomness-2
 git add modules/difficulty.js tools/difficulty-test.js js/questgenerator.js index.html package.json
-git commit -m "feat: difficulty modules (easy/hard/nightmare) + quest generator hook"
+git commit -m "feat: difficulty modules (hard/nightmare) + quest generator hook"
 ```
 
 ---
@@ -290,8 +249,8 @@ git commit -m "feat: difficulty modules (easy/hard/nightmare) + quest generator 
 - Modify: `tools/smoke.js` (assert the Difficulty section renders with 4 entries)
 
 **Interfaces:**
-- Consumes: tags `difficulty-easy`, `difficulty-hard`, `difficulty-nightmare` from Task 1; UI section schema (`includeSelected` + `isSingleOption` + `isMandatory`, entries with `code`/`tags`/`isDefault`).
-- Produces: settings section titled Difficulty / Difficolt&agrave; / Сложность with 4 entries and hash codes `3`/`4`/`5`; Task 3 relies on code `5` selecting Nightmare via URL hash.
+- Consumes: tags `difficulty-hard`, `difficulty-nightmare` from Task 1; UI section schema (`includeSelected` + `isSingleOption` + `isMandatory`, entries with `code`/`tags`/`isDefault`).
+- Produces: settings section titled Difficulty / Difficolt&agrave; / Сложность with 3 entries and hash codes `3`/`4`; Task 3 relies on code `4` selecting Nightmare via URL hash.
 
 - [ ] **Step 1: Extend the smoke test with a failing Difficulty-section check**
 
@@ -321,7 +280,7 @@ In `smokeMenu`, replace the two lines computing `generatorEntries` and `ok` with
 ```js
     const generatorEntries = await countGeneratorEntries(page);
     const difficultyEntries = await countDifficultyEntries(page);
-    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2 && difficultyEntries >= 4;
+    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2 && difficultyEntries >= 3;
     return { ok, sections, generatorEntries, difficultyEntries };
 ```
 
@@ -356,19 +315,6 @@ Find the end of the Generator section (the entry with `tags:[ "generator-campaig
                                 },
                                 entries:[
                                     {
-                                        code:"3",
-                                        label:{
-                                            IT:"Facile",
-                                            EN:"Easy",
-                                            RU:"Лёгкая"
-                                        },
-                                        description:{
-                                            IT:"Orde pi&ugrave; deboli: regole facilitate stampate sul foglio dell'avventura.",
-                                            EN:"Weaker Mobs: easier table rules are printed on the quest sheet.",
-                                            RU:"Более слабые орды: облегчённые правила печатаются на листе задания."
-                                        },
-                                        tags:[ "difficulty-easy" ]
-                                    },{
                                         isDefault:true,
                                         label:{
                                             IT:"Normale",
@@ -381,7 +327,7 @@ Find the end of the Generator section (the entry with `tags:[ "generator-campaig
                                             RU:"Стандартная игра, без дополнительных правил."
                                         }
                                     },{
-                                        code:"4",
+                                        code:"3",
                                         label:{
                                             IT:"Difficile",
                                             EN:"Hard",
@@ -394,7 +340,7 @@ Find the end of the Generator section (the entry with `tags:[ "generator-campaig
                                         },
                                         tags:[ "difficulty-hard" ]
                                     },{
-                                        code:"5",
+                                        code:"4",
                                         label:{
                                             IT:"Incubo",
                                             EN:"Nightmare",
@@ -418,14 +364,14 @@ Note: the Normal entry deliberately has NO `code` and NO `tags` (precedent: the 
 - [ ] **Step 4: Run smoke to verify the menu check passes**
 
 Run: `cd ~/GitHub/massive-randomness-2 && node tools/smoke.js RU http://127.0.0.1:4173/index.html 3`
-Expected: `[menu] ... Difficulty section: 4 entries; ok: yes`, exit 0
+Expected: `[menu] ... Difficulty section: 3 entries; ok: yes`, exit 0
 
 - [ ] **Step 5: Commit**
 
 ```bash
 cd ~/GitHub/massive-randomness-2
 git add modules/interface.js tools/smoke.js
-git commit -m "feat: difficulty selector in settings (easy/normal/hard/nightmare)"
+git commit -m "feat: difficulty selector in settings (normal/hard/nightmare)"
 ```
 
 ---
@@ -437,7 +383,7 @@ git commit -m "feat: difficulty selector in settings (easy/normal/hard/nightmare
 - Modify: `DATABASE.md` (Game variants section)
 
 **Interfaces:**
-- Consumes: hash code `5` (Nightmare) from Task 2; rule names `Nightmare Mode` / `Кошмарный режим` / `Modalit&agrave; Incubo` from Task 1. Default hash codes for context: `A` (Hellscape), `U` (bridges), `V` (one-shot), `1` (map normal), `Z` (map uniform).
+- Consumes: hash code `4` (Nightmare) from Task 2; rule names `Nightmare Mode` / `Кошмарный режим` / `Modalit&agrave; Incubo` from Task 1. Default hash codes for context: `A` (Hellscape), `U` (bridges), `V` (one-shot), `1` (map normal), `Z` (map uniform).
 - Produces: final verification that the whole pipeline works in the browser.
 
 - [ ] **Step 1: Add the failing Nightmare hash check to `tools/smoke.js`**
@@ -446,11 +392,11 @@ After the `smokeQuests` function, add:
 
 ```js
 async function smokeNightmare(browser) {
-    // Open a fresh page with a Nightmare hash (code 5) and a fixed seed;
+    // Open a fresh page with a Nightmare hash (code 4) and a fixed seed;
     // the difficulty rule block must appear on the rendered sheet.
     const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
     await page.addInitScript((lang) => { localStorage.setItem('MARA2_LANG', lang); }, LANG);
-    await page.goto(URL + '#AUV1Z5-424242', { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(URL + '#AUV1Z4-424242', { waitUntil: 'networkidle', timeout: 30000 });
     await page.waitForTimeout(2000);
     let data = await page.evaluate(() => ({
         story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
@@ -493,7 +439,7 @@ Expected: `[nightmare] sheet rendered: yes; rule block present: yes`, exit 0. (T
 In the `## Game variants` section, after the `* Dungeon Crawling Mode` line add:
 
 ```markdown
- * Difficulty modes _(Easy, Hard, and Nightmare table rules; Nightmare also enables Challenges and Boss fights)_
+ * Difficulty modes _(Hard and Nightmare table rules; Nightmare also enables Challenges and Boss fights)_
 ```
 
 - [ ] **Step 4: Run the full smoke suite in both languages**
