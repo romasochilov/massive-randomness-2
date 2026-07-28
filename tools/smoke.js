@@ -52,13 +52,31 @@ async function countGeneratorEntries(page) {
     });
 }
 
+async function countDifficultyEntries(page) {
+    return page.evaluate(() => {
+        const sections = Array.from(document.querySelectorAll('.section'));
+        const diff = sections.find(s => /^(Difficulty|Сложность|Difficoltà)$/i.test(s.innerText.trim()));
+        if (!diff) return -1;
+        let sib = diff.nextElementSibling;
+        let count = 0;
+        while (sib && !sib.classList.contains('section')) {
+            if (sib.classList.contains('items')) {
+                count += sib.querySelectorAll('.item').length;
+            }
+            sib = sib.nextElementSibling;
+        }
+        return count;
+    });
+}
+
 async function smokeMenu(page) {
     // Default configuration: Hellscape mandatory, no expansions checked.
     await openSettings(page);
     const sections = await readSections(page);
     const generatorEntries = await countGeneratorEntries(page);
-    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2;
-    return { ok, sections, generatorEntries };
+    const difficultyEntries = await countDifficultyEntries(page);
+    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2 && difficultyEntries >= 3;
+    return { ok, sections, generatorEntries, difficultyEntries };
 }
 
 async function smokePrint(page) {
@@ -116,7 +134,7 @@ async function smokeQuests(page) {
 
     // 1. Menu structure check
     const menu = await smokeMenu(page);
-    console.log(`[menu] Generator section present: ${menu.ok ? 'yes' : 'NO'}; entries: ${menu.generatorEntries}; sections seen: ${menu.sections.join(', ')}`);
+    console.log(`[menu] Generator section: ${menu.generatorEntries} entries; Difficulty section: ${menu.difficultyEntries} entries; ok: ${menu.ok ? 'yes' : 'NO'}`);
     if (!menu.ok) failed = true;
 
     // 2. Print button check (one-shot)

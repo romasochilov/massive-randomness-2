@@ -384,6 +384,56 @@ ModManager.modules.push(function(){
                                 ]
                             },{
                                 type:"includeSelected",
+                                isSingleOption:true,
+                                isMandatory:true,
+                                title:{
+                                    IT:"Difficolt&agrave;",
+                                    EN:"Difficulty",
+                                    RU:"Сложность"
+                                },
+                                entries:[
+                                    {
+                                        isDefault:true,
+                                        label:{
+                                            IT:"Normale",
+                                            EN:"Normal",
+                                            RU:"Обычная"
+                                        },
+                                        description:{
+                                            IT:"Il gioco standard, senza regole aggiuntive.",
+                                            EN:"The standard game, no extra rules.",
+                                            RU:"Стандартная игра, без дополнительных правил."
+                                        }
+                                    },{
+                                        code:"3",
+                                        label:{
+                                            IT:"Difficile",
+                                            EN:"Hard",
+                                            RU:"Сложная"
+                                        },
+                                        description:{
+                                            IT:"Orde pi&ugrave; numerose e resistenti: regole stampate sul foglio dell'avventura.",
+                                            EN:"Bigger, tougher Mobs: harder table rules are printed on the quest sheet.",
+                                            RU:"Более многочисленные и живучие орды: усложнённые правила печатаются на листе задания."
+                                        },
+                                        tags:[ "difficulty-hard" ]
+                                    },{
+                                        code:"4",
+                                        label:{
+                                            IT:"Incubo",
+                                            EN:"Nightmare",
+                                            RU:"Кошмар"
+                                        },
+                                        description:{
+                                            IT:"La sfida definitiva: regole punitive, Sfide e scontri con i Boss inclusi.",
+                                            EN:"The ultimate challenge: punishing table rules, Challenges and Boss fights included.",
+                                            RU:"Максимальный вызов: суровые правила, включены испытания и сражения с боссами."
+                                        },
+                                        tags:[ "difficulty-nightmare", "challenges-default", "boss" ]
+                                    }
+                                ]
+                            },{
+                                type:"includeSelected",
                                 ifMenuOptionSelected:[ "generator-oneshot" ],
                                 isSingleOption:true,
                                 isMandatory:true,
