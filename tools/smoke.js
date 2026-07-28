@@ -119,6 +119,34 @@ async function smokeQuests(page) {
     return empties;
 }
 
+async function smokeNightmare(browser) {
+    // Open a fresh page with a Nightmare hash (code 4) and a fixed seed;
+    // the difficulty rule block must appear on the rendered sheet.
+    const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
+    await page.addInitScript((lang) => { localStorage.setItem('MARA2_LANG', lang); }, LANG);
+    await page.goto(URL + '#AUV1Z4-424242', { waitUntil: 'networkidle', timeout: 30000 });
+    await page.waitForTimeout(2000);
+    let data = await page.evaluate(() => ({
+        story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
+        text: document.body.innerText
+    }));
+    if (!data.story) {
+        // Some flows need an explicit generation; settings from the hash persist.
+        await page.evaluate(() => {
+            const btn = document.querySelector('.button.newQuest');
+            if (btn) btn.click();
+        });
+        await page.waitForTimeout(1500);
+        data = await page.evaluate(() => ({
+            story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
+            text: document.body.innerText
+        }));
+    }
+    await page.close();
+    const hasRule = /Nightmare Mode|Кошмарный режим|Modalità Incubo/i.test(data.text);
+    return { ok: !!data.story && hasRule, storyLength: data.story.length, hasRule };
+}
+
 (async () => {
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
@@ -150,6 +178,11 @@ async function smokeQuests(page) {
         empties.slice(0, 5).forEach(e => console.log(' -', JSON.stringify(e)));
         failed = true;
     }
+
+    // 4. Nightmare difficulty end-to-end
+    const nightmare = await smokeNightmare(browser);
+    console.log(`[nightmare] sheet rendered: ${nightmare.storyLength > 0 ? 'yes' : 'NO'}; rule block present: ${nightmare.hasRule ? 'yes' : 'NO'}`);
+    if (!nightmare.ok) failed = true;
 
     // 3. Page errors
     const realErrors = pageErrors.filter(e => !ignorableError(e));
