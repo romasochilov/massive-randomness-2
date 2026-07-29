@@ -119,12 +119,14 @@ async function smokeQuests(page) {
     return empties;
 }
 
-async function smokeNightmare(browser) {
-    // Open a fresh page with a Nightmare hash (code 4) and a fixed seed;
+async function smokeDifficultyHash(browser, pageErrors, code, ruleRegex) {
+    // Open a fresh page with a difficulty hash (Hard=3, Nightmare=4) and a fixed seed;
     // the difficulty rule block must appear on the rendered sheet.
     const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
+    page.on('pageerror', err => pageErrors.push(err.message));
+    page.on('console', msg => { if (msg.type() === 'error') pageErrors.push('console.error: ' + msg.text()); });
     await page.addInitScript((lang) => { localStorage.setItem('MARA2_LANG', lang); }, LANG);
-    await page.goto(URL + '#AUV1Z4-424242', { waitUntil: 'networkidle', timeout: 30000 });
+    await page.goto(URL + '#AUV1Z' + code + '-424242', { waitUntil: 'networkidle', timeout: 30000 });
     await page.waitForTimeout(2000);
     let data = await page.evaluate(() => ({
         story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
@@ -143,7 +145,7 @@ async function smokeNightmare(browser) {
         }));
     }
     await page.close();
-    const hasRule = /Nightmare Mode|Кошмарный режим|Modalità Incubo/i.test(data.text);
+    const hasRule = ruleRegex.test(data.text);
     return { ok: !!data.story && hasRule, storyLength: data.story.length, hasRule };
 }
 
@@ -179,8 +181,13 @@ async function smokeNightmare(browser) {
         failed = true;
     }
 
-    // 4. Nightmare difficulty end-to-end
-    const nightmare = await smokeNightmare(browser);
+    // 4. Hard difficulty end-to-end
+    const hard = await smokeDifficultyHash(browser, pageErrors, '3', /Hard Mode|Сложный режим|Modalità Difficile/i);
+    console.log(`[hard] sheet rendered: ${hard.storyLength > 0 ? 'yes' : 'NO'}; rule block present: ${hard.hasRule ? 'yes' : 'NO'}`);
+    if (!hard.ok) failed = true;
+
+    // 5. Nightmare difficulty end-to-end
+    const nightmare = await smokeDifficultyHash(browser, pageErrors, '4', /Nightmare Mode|Кошмарный режим|Modalità Incubo/i);
     console.log(`[nightmare] sheet rendered: ${nightmare.storyLength > 0 ? 'yes' : 'NO'}; rule block present: ${nightmare.hasRule ? 'yes' : 'NO'}`);
     if (!nightmare.ok) failed = true;
 

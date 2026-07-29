@@ -246,7 +246,7 @@ git commit -m "feat: difficulty modules (hard/nightmare) + quest generator hook"
 
 **Files:**
 - Modify: `modules/interface.js` (insert new section after the Generator section, before the Map size section, ~line 385)
-- Modify: `tools/smoke.js` (assert the Difficulty section renders with 4 entries)
+- Modify: `tools/smoke.js` (assert the Difficulty section renders with 3 entries)
 
 **Interfaces:**
 - Consumes: tags `difficulty-hard`, `difficulty-nightmare` from Task 1; UI section schema (`includeSelected` + `isSingleOption` + `isMandatory`, entries with `code`/`tags`/`isDefault`).
