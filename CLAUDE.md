@@ -50,11 +50,10 @@ step, deployed via GitHub Pages (romasochilov.github.io/massive-randomness-2).
 
 - Dev line: `feature/russian-localization` (28 commits ahead of `main`;
   RU localization, print/PDF, base-only campaign, quests-extras).
-- `feature/difficulty-modes` (branched off the dev line): COMPLETE and
-  review-clean — Normal/Hard/Nightmare selector (no Easy by design, Normal is
+- Difficulty modes: COMPLETE, review-clean, merged into the dev line via PR
+  (Jul 2026) — Normal/Hard/Nightmare selector (no Easy by design, Normal is
   the easiest; hash codes 3/4), rule blocks via `modules/difficulty.js` +
   `difficultyRules` hook in `questgenerator.js`, Nightmare auto-enables
   Challenges + Boss fights, campaign-proof via `campaignProtectedNeeds`.
-  All local, nothing pushed. Next: owner decides merge/push.
 - Known flake: the unseeded 60-generation smoke loop rarely yields one empty
   card; re-run clean. Pre-existing, unrelated to difficulty work.
