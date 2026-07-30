@@ -190,6 +190,7 @@ This is the list of what's into _Massive Randomness 2_.
 
  * Challenges _(adapted from anubys [Dungeon Skill Challenge](https://boardgamegeek.com/filepage/245223/dungeon-skills-challenge))_
  * Dungeon Crawling Mode
+ * Difficulty modes _(Hard and Nightmare table rules; Nightmare also enables Challenges and Boss fights)_
 
 ## Campaign mode
 

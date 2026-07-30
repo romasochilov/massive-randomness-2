@@ -228,6 +228,15 @@ QuestGenerator=(function() {
                     
             }
 
+            // Apply difficulty rules (if any)
+
+            if (resources.difficultyRules)
+                resources.difficultyRules.forEach(name=>{
+                    resources.specialRules[name].forEach(rule=>{
+                        quest.rules.push(rule);
+                    })
+                });
+
             result.quest = quest;
             result.mapConfig = mapConfig;
             result.labels = labels;

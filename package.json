@@ -7,7 +7,8 @@
     "serve": "python3 -m http.server 4173",
     "smoke": "node tools/smoke.js",
     "smoke:ru": "node tools/smoke.js RU",
-    "smoke:en": "node tools/smoke.js EN"
+    "smoke:en": "node tools/smoke.js EN",
+    "test:difficulty": "node tools/difficulty-test.js"
   },
   "devDependencies": {
     "playwright": "^1.58.0"

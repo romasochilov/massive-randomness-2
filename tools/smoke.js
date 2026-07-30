@@ -52,13 +52,31 @@ async function countGeneratorEntries(page) {
     });
 }
 
+async function countDifficultyEntries(page) {
+    return page.evaluate(() => {
+        const sections = Array.from(document.querySelectorAll('.section'));
+        const diff = sections.find(s => /^(Difficulty|Сложность|Difficoltà)$/i.test(s.innerText.trim()));
+        if (!diff) return -1;
+        let sib = diff.nextElementSibling;
+        let count = 0;
+        while (sib && !sib.classList.contains('section')) {
+            if (sib.classList.contains('items')) {
+                count += sib.querySelectorAll('.item').length;
+            }
+            sib = sib.nextElementSibling;
+        }
+        return count;
+    });
+}
+
 async function smokeMenu(page) {
     // Default configuration: Hellscape mandatory, no expansions checked.
     await openSettings(page);
     const sections = await readSections(page);
     const generatorEntries = await countGeneratorEntries(page);
-    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2;
-    return { ok, sections, generatorEntries };
+    const difficultyEntries = await countDifficultyEntries(page);
+    const ok = sections.some(s => /Generator|Генератор|Generatore/i.test(s)) && generatorEntries >= 2 && difficultyEntries >= 3;
+    return { ok, sections, generatorEntries, difficultyEntries };
 }
 
 async function smokePrint(page) {
@@ -101,6 +119,36 @@ async function smokeQuests(page) {
     return empties;
 }
 
+async function smokeDifficultyHash(browser, pageErrors, code, ruleRegex) {
+    // Open a fresh page with a difficulty hash (Hard=3, Nightmare=4) and a fixed seed;
+    // the difficulty rule block must appear on the rendered sheet.
+    const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
+    page.on('pageerror', err => pageErrors.push(err.message));
+    page.on('console', msg => { if (msg.type() === 'error') pageErrors.push('console.error: ' + msg.text()); });
+    await page.addInitScript((lang) => { localStorage.setItem('MARA2_LANG', lang); }, LANG);
+    await page.goto(URL + '#AUV1Z' + code + '-424242', { waitUntil: 'networkidle', timeout: 30000 });
+    await page.waitForTimeout(2000);
+    let data = await page.evaluate(() => ({
+        story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
+        text: document.body.innerText
+    }));
+    if (!data.story) {
+        // Some flows need an explicit generation; settings from the hash persist.
+        await page.evaluate(() => {
+            const btn = document.querySelector('.button.newQuest');
+            if (btn) btn.click();
+        });
+        await page.waitForTimeout(1500);
+        data = await page.evaluate(() => ({
+            story: (document.querySelector('.story') ? document.querySelector('.story').innerText : '').trim(),
+            text: document.body.innerText
+        }));
+    }
+    await page.close();
+    const hasRule = ruleRegex.test(data.text);
+    return { ok: !!data.story && hasRule, storyLength: data.story.length, hasRule };
+}
+
 (async () => {
     const browser = await chromium.launch({ headless: true });
     const page = await browser.newPage({ viewport: { width: 1280, height: 1200 } });
@@ -116,7 +164,7 @@ async function smokeQuests(page) {
 
     // 1. Menu structure check
     const menu = await smokeMenu(page);
-    console.log(`[menu] Generator section present: ${menu.ok ? 'yes' : 'NO'}; entries: ${menu.generatorEntries}; sections seen: ${menu.sections.join(', ')}`);
+    console.log(`[menu] Generator section: ${menu.generatorEntries} entries; Difficulty section: ${menu.difficultyEntries} entries; ok: ${menu.ok ? 'yes' : 'NO'}`);
     if (!menu.ok) failed = true;
 
     // 2. Print button check (one-shot)
@@ -132,6 +180,16 @@ async function smokeQuests(page) {
         empties.slice(0, 5).forEach(e => console.log(' -', JSON.stringify(e)));
         failed = true;
     }
+
+    // 4. Hard difficulty end-to-end
+    const hard = await smokeDifficultyHash(browser, pageErrors, '3', /Hard Mode|Сложный режим|Modalità Difficile/i);
+    console.log(`[hard] sheet rendered: ${hard.storyLength > 0 ? 'yes' : 'NO'}; rule block present: ${hard.hasRule ? 'yes' : 'NO'}`);
+    if (!hard.ok) failed = true;
+
+    // 5. Nightmare difficulty end-to-end
+    const nightmare = await smokeDifficultyHash(browser, pageErrors, '4', /Nightmare Mode|Кошмарный режим|Modalità Incubo/i);
+    console.log(`[nightmare] sheet rendered: ${nightmare.storyLength > 0 ? 'yes' : 'NO'}; rule block present: ${nightmare.hasRule ? 'yes' : 'NO'}`);
+    if (!nightmare.ok) failed = true;
 
     // 3. Page errors
     const realErrors = pageErrors.filter(e => !ignorableError(e));
